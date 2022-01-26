@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container-fluid bg-light text-dark p-5">
+    <form method="POST">
+      {{form.hidden_tag()}}
+      <div class="mb-3">
+        {{form.location.label(class = 'form-label')}} {{form.location(class = 'form-control', value="Prediction_Batch_Files")}}
+      </div>
+      <div>
+        {{form.submit(class="btn btn-primary")}}
+      </div>
+    </form>
+  </div>
+  {% for mess in get_flashed_messages() %}
+  <div class="alert alert-dark alert-dismissible fade show text-center" role="alert">
+    <h2><strong>{{mess}}</strong></h2>
+    {% if mess[0].lower()=='p' %}
+    <h4>Your final files are present inside 'Prediction_Results' directory</h4>
+    <br>
+    <h5 align='left'>Here are some of the samples:</h5>
+    <br>
+    <img align='center'  class="img-thumbnail" src="/static/dataframe.png">
+    {% else %}
+    <br>
+    <h3>Please recheck your input and try again</h3>
+    {% endif %}
+    <br><br>
+  </div>
+  {% endfor %}
+{% endblock %}

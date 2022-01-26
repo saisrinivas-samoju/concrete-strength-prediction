@@ -1,0 +1,2 @@
+2021-11-26/23:03:26		Invalid Column Length for the file!! File moved to Bad Raw Folder : concrete_strength_20072021_090716.csv
+2021-11-26/23:03:26		Column Length Validation Completed!

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container-fluid bg-light text-dark p-5">
+    <form method="POST">
+        {{form.hidden_tag()}}
+      <div class="mb-3">
+        {{form.cement.label(class = "form-label")}} {{form.cement(class = "form-control", placeholder="100 to 550")}}
+      </div>
+      <div class="mb-3">
+        {{form.blast_furnace_slag.label(class = "form-label")}} {{form.blast_furnace_slag(class = "form-control", placeholder="0 to 360")}}
+      </div>
+      <div class="mb-3">
+        {{form.fly_ash.label(class = "form-label")}} {{form.fly_ash(class = "form-control", placeholder="0 to 200")}}
+      </div>
+      <div class="mb-3">
+        {{form.water.label(class = "form-label")}} {{form.water(class = "form-control", placeholder="125 to 250")}}
+      </div>
+      <div class="mb-3">
+        {{form.super_plasticizer.label(class = "form-label")}} {{form.super_plasticizer(class = "form-control", placeholder="0 to 30")}}
+      </div>
+      <div class="mb-3">
+        {{form.coarse_aggregate.label(class = "form-label")}} {{form.coarse_aggregate(class = "form-control", placeholder="800 to 1200")}}
+      </div>
+      <div class="mb-3">
+        {{form.fine_aggregate.label(class = "form-label")}} {{form.fine_aggregate(class = "form-control", placeholder="600 to 1000")}}
+      </div>
+      <div class="mb-3">
+        {{form.age.label(class = "form-label")}} {{form.age(class = "form-control", placeholder="1 to 365")}}
+      </div>
+      <div>
+        {{form.submit(class="btn btn-primary")}}
+      </div>
+    </form>
+  </div>
+  {% for mess in get_flashed_messages() %}
+  <div class="alert alert-dark alert-dismissible fade show text-center" role="alert">
+    <h3>Features Submitted</h3>
+    <h1>The Compressive strength of concrete with the given features is: <strong>{{mess}}</strong></h1>
+  </div>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,4 @@
+2021-11-28/15:48:56		LengthOfDateStampInFile::8	LengthOfTimeStampInFile::6	NumberofColumns::8
+
+2021-11-28/15:49:37		LengthOfDateStampInFile::8	LengthOfTimeStampInFile::6	NumberofColumns::8
+

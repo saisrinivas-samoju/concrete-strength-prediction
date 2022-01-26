@@ -1,0 +1,5 @@
+2021-11-26/23:03:26		Created Good Raw Directory!
+2021-11-26/23:03:26		Created Bad Raw Directory!
+2021-11-26/23:03:36		Good Raw directory has been deleted successfully!
+2021-11-26/23:03:36		Bad data files moved to archive
+2021-11-26/23:03:36		Bad Raw Data Folder Deleted successfully!

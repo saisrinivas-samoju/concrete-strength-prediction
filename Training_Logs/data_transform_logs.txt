@@ -1,0 +1,1 @@
+2021-11-26/23:03:27		No null values are present in the file: concrete_strength_21072021_143634.csv

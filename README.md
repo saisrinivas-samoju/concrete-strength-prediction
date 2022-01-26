@@ -1,79 +1,99 @@
-## Wafer Fault Detection
+# Concrete Compressive Strength prediction
+
+
 
 #### Problem Statement:
 
-    Wafer (In electronics), also called a slice or substrate, is a thin slice of semiconductor,
-    such as a crystalline silicon (c-Si), used for fabricationof integrated circuits and in photovoltaics,
-    to manufacture solar cells.
+  The goal is to build a programme to predict the compressive strength of concrete mixture without having to wait for it to set and test, with the information previously gathered by using regression methods in Machine Learning.
 
-    The inputs of various sensors for different wafers have been provided.
-    The goal is to build a machine learning model which predicts whether a wafer needs to be replaced or not
-    (i.e whether it is working or not) nased on the inputs from various sensors.
-    There are two classes: +1 and -1.
-    +1: Means that the wafer is in a working condition and it doesn't need to be replaced.
-    -1: Means that the wafer is faulty and it needa to be replaced.
+#### Architecture
+
+<a href="https://ibb.co/d57fbC3"><img src="https://i.ibb.co/W2sHD8d/Flow-Chart.png" alt="Flow-Chart" border="0"></a>
 
 #### Data Description
 
-    The client will send data in multiple sets of files in batches at a given location.
-    Data will contain Wafer names and 590 columns of different sensor values for each wafer.
-    The last column will have the "Good/Bad" value for each wafer.
+  * As per the Data Sharing agreement, we will receive data files in a shared location by the client, in the pre-decided formats. The format of files agreed is comma-separated values(.csv) files, with 9 columns representing the components of concrete mixer, it’s age, and the compressive strength of concrete as the label.
+  * As per the data sharing agreement, we will also get two schema files from the client, which contains all the relevant information about the training and prediction datafiles.
 
-    Apart from training files, we laso require a "schema" file from the client, which contain all the
-    relevant information about the training files such as:
+<a href="https://ibb.co/bWK8Z75"><img src="https://i.ibb.co/QbK1RXv/Concrete-Data-Description.png" alt="Concrete-Data-Description" border="0"></a>
 
-    Name of the files, Length of Date value in FileName, Length of Time value in FileName, NUmber of Columnns,
-    Name of Columns, and their dataype.
 
-#### Data Validation
+#### Data Validation and Transformation
 
-    In This step, we perform different sets of validation on the given set of training files.
+  Once we gather all the data from the client. We will start the data validation process as the data sharing agreement and the requirements of machine learning process as a part of our training process.
+  1. Filename validation: First we will start with the file name validation, as per the schema file given for the training datasets. We will manually enter the name tag present in the files name from the schema file, and validate it. After validating the pattern in the name, we will check for the length of date and time in the file name. If all the values are as per the schema file, we will move such files to Good_Data_Folder. Else, we will move such files to Bad_Data_Folder.
+  2. No. of Columns: We will validate the no. of columns present in each file in the Good_Data_Folder, if the no. of columns present in a file matches the no. of columns present in the schema file for training, that file will be retained in the same folder. Else, that file will be moved to Bad_Data_Folder.
+  3. Name of Columns: The names of the columns present in each file in the Good_Data_Folder is validated and should be as per the schema file. Else, those files will be moved to the Bad_Data_Folder.
+  4. Datatype of Columns: The datatypes of the columns present in each file in the Good_Data_Folder is validated and should be as per the schema file. Else, those files will be moved to the Bad_Data_Folder.
+  5. Null values in columns: If any of the columns in a file have all the values as Null or missing, we discard such a file and move it to Bad_Data_Folder. And, we will replace the other null values with a string code “Null”.
 
-    Name Validation: We validate the name of the files based on the given name in the schema file. We have
-    created a regex patterg as per the name given in the schema fileto use for validation. After validating
-    the pattern in the name, we check for the length of the date in the file name as well as the length of time
-    in the file name. If all the values are as per requirements, we move such files to "Good_Data_Folder" else
-    we move such files to "Bad_Data_Folder."
+#### Data Insertion into Database
 
-    Number of Columns: We validate the number of columns present in the files, and if it doesn't match with the
-    value given in the schema file, then the file id moves to "Bad_Data_Folder."
+  * Database Creation: Create a SQLite database, if it is not already present in the given directory. If it is present, open the database by connecting to that database.
+  * Table Creation in the Database: Create a table in the database with name “Good_Data” for inserting the files in the Good_Data_Folder based on given column names and datatypes in the schema file, if it is not already present in the database. If that table is already present in the database, no need to create a new table.
+  * Insertion of files in the table: All the files in the Good_Data_Folder are inserted in this table. If any files are raising errors while inserting the data to the table due to the invalid datatypes, those files will be moved to the Bad_Data_Folder.
 
-    Name of Columns: The name of the columns is validated and should be the same as given in the schema file.
-    If not, then the file is moved to "Bad_Data_Folder".
+#### Export the data to a csv file
 
-    The datatype of columns: The datatype of columns is given in the schema file. This is validated when we insert
-    the files into Database. If the datatype is wrong, then the file is moved to "Bad_Data_Folder."
+  * The data from the database will be exported to the csv file, and is used for model training in the later stages.
+  * All the files in the Bad_Data_Folder will be moved to Archives, as we want to show the rejected files to the client.
+  * All the files in the Good_Data_Folder will be deleted as we have already captured this data in our database.
 
-    Null values in columns: If any of the columns in a file have all the values as NULL or missing, we discard such
-    a file and move it to "Bad_Data_Folder".
+#### Data Pre-processing
 
-#### Data Insertion in Database
+  We then read the exported csv file, and impute all the values with Null String code using KNN Imputer. We will also perform necessary feature engineering techniques as part of our pre-processing step, like dropping all the columns with zero standard deviation etc.
 
-     Database Creation and Connection: Create a database with the given name passed. If the database is already created,
-     open the connection to the database.
+#### Data Clustering
 
-     Table creation in the database: Table with name - "Good_Data", is created in the database for inserting the files
-     in the "Good_Data_Folder" based on given column names and datatype in the schema file. If the table is already
-     present, then the new table is not created and new files are inserted in the already present table as we want
-     training to be done on new as well as old training files.
-
-     Insertion of file in the table: All the files in the "Good_Data_Folder" are inserted in the above-created table. If
-     any file has invalid data type in any of the columns, the file is not loaded in the table and is moved to
-     "Bad_Data_Folder".
+  We are using an semi-supervised machine learning process. So, once our data is clean, we cluster the data into different clusters (using KMeans Clustering Algorithm) which we later use for training different models on each cluster, this will increase the overall accuracy of the project. So, first we divide the data based on implicit patterns in the data. Then, we give a number to each cluster, and add new column which consists of cluster name.
 
 #### Model Training
 
-     Data Export from Db: The data in a stored database is exported as a CSV file to be used for model training.
+  By using six machine learning algorithms, “Linear Regression”, “Elastic Net”, “Support-Vector Regressor”, “Decision-Tree Regressor”, “Random-Forest Regressor”, and “XGBoost Regressor”, we will train each cluster by Grid Searching few hyperparameters that are already defined using Cross-validation. We decide the best model for each cluster based on their R2 square score. Once we find the best models for each cluster, we will save them in the models folder with their clusters numbers in their names and folder names.
 
-     Data Preprocessing:
-        Check for null values in the columns. If present, impute the null values using the KNN imputer.
+#### Deployment
 
-        Check if any column has zero standard deviation, remove such columns as they don't give any information during
-        model training.
+  * After training the model in the local system, and testing it. We will create a CICD pipeline using circleci and dockerhub for our model deployment.
+  * We will deploy trained model in Heroku platform.
+  * This model can be used for training and prediction after deployment directly in the webpage.
 
-     Clustering: KMeans algorithm is used to create clusters in the preprocessed data. The optimum number of clusters
-     is selected
+#### Prediction
 
+  * There are two types of predictions can be done in the project:
+    * Predicting a single sample result
+    * Prediction of Batch files
+  * Using the Predict Batch Files page, you can predict compressive strength for all the samples in all the validate csv files provided. This is can be helpful, if you want to check the compressive strength of multiple samples at a time for evaluating later.
+  * Using Predict page, you can quickly predict the compressive strength of concrete just by entering input values. This can handy during the concrete mixing period.
+  Prediction
+
+#### Predicting a single sample result
+
+  * Calculating the compressive strength of concrete mixing before even mixing it, will save a lot of time. So, before  mixing the concrete, by entering the densities of the mixer and after how many no. of days we want to measure the strength of concrete, we can directly find the compressive strength. Using this insight, further actions can be done in the project planning process.
+  * For predicting the concrete compressive strength, inputs for all the 8 features is required. If a particular feature is not present in a particular mixer, you can give value 0 for it.
+  * Once, you enter all the data and click predict, this data will get a cluster number by the already trained Kmeans clustering model.
+  * Based on this cluster number, the best machine learning model will be assigned for prediction, and the output is generated by this machine learning taking all the using input values, if they are valid.
+
+#### Prediction of Batch Files
+
+  * If the compressive strength is not as per the requirements, multiple combination of mixers can be given as csv files to Predict Batch Files page for checking the combination i.e. best suited for that particular construction project.
+  * Before predicting the output of the data present in the data files, we have to perform some similar actions we did in the training process. These steps are required to insert our data  for prediction. We will also have a schema file for prediction, with a little difference when compared to the schema file for training i.e. no output column present in the prediction schema file and in the batch files given for the prediction. We will perform the following steps:
+    * File name validation
+    * File type validation
+    * No. of columns validation
+    * Name of columns validation
+    * Datatypes of the columns validation
+    * Null values validation and transformation
+  * The validated data will inserted into a database, and after completing the insertion process for all the files. The files present in the  Good_Data_Folder will be deleted and Bad_Data_Folder will be moved to archive.
+  * The data from the database will be exported into a csv file and similar pre-processing steps will be performed on the data loaded from this csv file.
+  * After the pre-processing steps, the data will be divided into the clusters by using the already trained Kmeans clustering model.
+  * And, the best model created for each cluster will be used for prediction and all the data will be compiled together as per their original index order and the filename order.
+  * Finally, the prediction results will be exported as “Predictions.csv” file in “Prediction Results” folder.
+
+## Link
+
+<a href="https://concrete-strength--prediction.herokuapp.com/">Heroku App Link</a>
+
+----
 
 ## Create a file "Dockerfile" with below content
 
@@ -83,12 +103,12 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 ENTRYPOINT [ "python" ]
-CMD [ "main.py" ]
+CMD [ "app.py" ]
 ```
 
 ## Create a "Procfile" with following content
 ```
-web: gunicorn main:app
+web: gunicorn app:app
 ```
 
 ## create a file ".circleci\config.yml" with following content
@@ -182,7 +202,7 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Avnish327030/wafer_circleci.git
+git remote add origin
 git push -u origin main
 ```
 
@@ -192,7 +212,7 @@ git push -u origin main
 
 ## setup your project
 
-<a href="https://app.circleci.com/projects/github/Avnish327030/setup/"> Setup project </a>
+<a href="https://app.circleci.com/pipelines/github/saisrinivas-samoju/concrete-strength-prediction"> Setup project </a>
 
 ## Select project setting in CircleCI and below environment variable
 
@@ -202,7 +222,7 @@ git push -u origin main
 >HEROKU_APP_NAME
 >HEROKU_EMAIL_ADDRESS
 
->DOCKER_IMAGE_NAME=<wafercircle3270303>
+>DOCKER_IMAGE_NAME=<concretestrengthprediction>
 
 ## to update the modification
 

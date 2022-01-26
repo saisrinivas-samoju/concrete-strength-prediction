@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container-fluid bg-light text-dark p-5">
+    <form method="POST">
+      {{form.hidden_tag()}}
+      <div class="mb-3">
+        {{form.location.label(class = 'form-label')}} {{form.location(class = 'form-control', value="Training_Batch_Files")}}
+      </div>
+      <div>
+        {{form.submit(class="btn btn-success")}}
+      </div>
+    </form>
+  </div>
+  {% for mess in get_flashed_messages() %}
+  <div class="alert alert-dark alert-dismissible fade show text-center" role="alert">
+    <h2><strong>{{mess}}</strong></h2>
+    {% if mess[0].lower()=='t' %}
+    <h4>The trained models for different clusters are present in 'Models' folder</h4>
+    <br>
+    {% else %}
+    <br>
+    <h3>Please recheck your input and try again</h3>
+    {% endif %}
+    <br><br>
+  </div>
+  {% endfor %}
+{% endblock %}

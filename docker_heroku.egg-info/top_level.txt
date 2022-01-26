@@ -1,0 +1,12 @@
+Best_Model_Finder
+DataTransform_Prediction
+DataTransform_Training
+Data_Loader
+Data_Preprocessing
+Database_Operations
+Dataframe_to_Image
+File_Operations
+Prediction_Raw_data_validation
+Training_Raw_data_validation
+application_logging
+tests

@@ -1,0 +1,109 @@
+2021-11-26/23:03:36		Training Started...
+2021-11-26/23:03:36		Entered is_null_present in Preprocessor Class
+2021-11-26/23:03:36		No null values are present in the training dataset.
+2021-11-26/23:03:36		Exited the is_null_present method from the Preprocessing class
+2021-11-26/23:03:36		Entered separate_label_feature method in Preprocessor class
+2021-11-26/23:03:36		Separated Features and label successfully.
+2021-11-26/23:03:36		Exited the separate_label_feature method in Preprocessor class.
+2021-11-26/23:03:36		Entered get_columns_with_zero_std in Preprocessor Class
+2021-11-26/23:03:36		Searching for all the columns with a zero standard deviation...
+2021-11-26/23:03:36		No columns with zero standard deviation
+2021-11-26/23:03:36		Exited the get_columns_with_zero_std method in the Preprocessing class
+2021-11-26/23:03:36		Entered remove_columns method in Proprocessor Class
+2021-11-26/23:03:36		Remove the column(s): [] successfully
+2021-11-26/23:03:36		Entered clustering function
+2021-11-26/23:03:40		Found the optimum cluster value; k=3
+2021-11-26/23:03:40		Adding 'clusters' column to the feature set
+2021-11-26/23:03:40		Successfully added 'clusters' column to the feature set
+2021-11-26/23:03:40		Saving the clustering model for future use
+2021-11-26/23:03:40		Entered the save_model method of FileOperation class
+2021-11-26/23:03:40		Saving the KMeans model at Models/KMeans directory as KMeans.joblib
+2021-11-26/23:03:40		Successfully saving the KMeans model in the Models/KMeans directory.
+2021-11-26/23:03:40		Exited the save_model method of FileOperation class
+2021-11-26/23:03:40		Entered separate_label_feature method in Preprocessor class
+2021-11-26/23:03:40		Separated Features and label successfully.
+2021-11-26/23:03:40		Exited the separate_label_feature method in Preprocessor class.
+2021-11-26/23:03:40		Entered get_best_model method in ModelFinder class
+2021-11-26/23:03:40		Entered lr_model method in ModelFinder class
+2021-11-26/23:03:40		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2021-11-26/23:03:40		Exited lr_model method in ModelFinder class
+2021-11-26/23:03:40		Entered elastic_net_model method in ModelFinder class
+2021-11-26/23:03:48		Best parameters for elastic net model: l1_ratio=1.0; alpha=0.13706284201070543
+2021-11-26/23:03:48		Exited elastic_net_model method in ModelFinder class
+2021-11-26/23:03:48		Entered svr_model method in ModelFinder class
+2021-11-26/23:03:49		Best parameters for SVR model: C=1; kernel=linear; degree=2
+2021-11-26/23:03:49		Exited svr_model method in ModelFinder class
+2021-11-26/23:03:49		Entered dt_model method in ModelFinder class
+2021-11-26/23:03:51		Best parameters for Decision Tree model: criterion=friedman_mse; max_depth=None
+2021-11-26/23:03:51		Exited dt_model method in ModelFinder class
+2021-11-26/23:03:51		Entered rf_model method in ModelFinder class
+2021-11-26/23:08:06		Best parameters for Random Forest model: n_estimators=150; criterion=mae; max_depth=None
+2021-11-26/23:08:08		Exited rf_model method in ModelFinder class
+2021-11-26/23:08:08		Entered xgb_model method in ModelFinder class
+2021-11-26/23:09:09		Best parameters for XGBoost model: n_estimators=500; learning_rate=0.1
+2021-11-26/23:09:11		Exited xgb_model method in ModelFinder class
+2021-11-26/23:09:11		Entered the save_model method of FileOperation class
+2021-11-26/23:09:11		Saving the XGBoost2 model at Models/XGBoost2 directory as XGBoost2.joblib
+2021-11-26/23:09:11		Successfully saving the XGBoost2 model in the Models/XGBoost2 directory.
+2021-11-26/23:09:11		Exited the save_model method of FileOperation class
+2021-11-26/23:09:11		Entered separate_label_feature method in Preprocessor class
+2021-11-26/23:09:11		Separated Features and label successfully.
+2021-11-26/23:09:11		Exited the separate_label_feature method in Preprocessor class.
+2021-11-26/23:09:11		Entered get_best_model method in ModelFinder class
+2021-11-26/23:09:11		Entered lr_model method in ModelFinder class
+2021-11-26/23:09:11		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2021-11-26/23:09:11		Exited lr_model method in ModelFinder class
+2021-11-26/23:09:11		Entered elastic_net_model method in ModelFinder class
+2021-11-26/23:09:18		Best parameters for elastic net model: l1_ratio=0.5; alpha=0.11329158890608011
+2021-11-26/23:09:18		Exited elastic_net_model method in ModelFinder class
+2021-11-26/23:09:18		Entered svr_model method in ModelFinder class
+2021-11-26/23:09:20		Best parameters for SVR model: C=1; kernel=linear; degree=2
+2021-11-26/23:09:20		Exited svr_model method in ModelFinder class
+2021-11-26/23:09:20		Entered dt_model method in ModelFinder class
+2021-11-26/23:09:22		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2021-11-26/23:09:22		Exited dt_model method in ModelFinder class
+2021-11-26/23:09:22		Entered rf_model method in ModelFinder class
+2021-11-26/23:13:56		Best parameters for Random Forest model: n_estimators=100; criterion=mae; max_depth=None
+2021-11-26/23:13:57		Exited rf_model method in ModelFinder class
+2021-11-26/23:13:57		Entered xgb_model method in ModelFinder class
+2021-11-26/23:14:55		Best parameters for XGBoost model: n_estimators=100; learning_rate=0.1
+2021-11-26/23:14:55		Exited xgb_model method in ModelFinder class
+2021-11-26/23:14:55		Entered the save_model method of FileOperation class
+2021-11-26/23:14:55		Saving the XGBoost0 model at Models/XGBoost0 directory as XGBoost0.joblib
+2021-11-26/23:14:55		Successfully saving the XGBoost0 model in the Models/XGBoost0 directory.
+2021-11-26/23:14:55		Exited the save_model method of FileOperation class
+2021-11-26/23:14:55		Entered separate_label_feature method in Preprocessor class
+2021-11-26/23:14:55		Separated Features and label successfully.
+2021-11-26/23:14:55		Exited the separate_label_feature method in Preprocessor class.
+2021-11-26/23:14:55		Entered get_best_model method in ModelFinder class
+2021-11-26/23:14:55		Entered lr_model method in ModelFinder class
+2021-11-26/23:14:55		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2021-11-26/23:14:55		Exited lr_model method in ModelFinder class
+2021-11-26/23:14:55		Entered elastic_net_model method in ModelFinder class
+2021-11-26/23:15:03		Best parameters for elastic net model: l1_ratio=1.0; alpha=0.03183422655618583
+2021-11-26/23:15:03		Exited elastic_net_model method in ModelFinder class
+2021-11-26/23:15:03		Entered svr_model method in ModelFinder class
+2021-11-26/23:15:04		Best parameters for SVR model: C=1; kernel=linear; degree=2
+2021-11-26/23:15:04		Exited svr_model method in ModelFinder class
+2021-11-26/23:15:04		Entered dt_model method in ModelFinder class
+2021-11-26/23:15:06		Best parameters for Decision Tree model: criterion=mse; max_depth=None
+2021-11-26/23:15:06		Exited dt_model method in ModelFinder class
+2021-11-26/23:15:06		Entered rf_model method in ModelFinder class
+2021-11-26/23:19:29		Best parameters for Random Forest model: n_estimators=200; criterion=mse; max_depth=None
+2021-11-26/23:19:30		Exited rf_model method in ModelFinder class
+2021-11-26/23:19:30		Entered xgb_model method in ModelFinder class
+2021-11-26/23:20:29		Best parameters for XGBoost model: n_estimators=200; learning_rate=0.1
+2021-11-26/23:20:29		Exited xgb_model method in ModelFinder class
+2021-11-26/23:20:29		Entered the save_model method of FileOperation class
+2021-11-26/23:20:29		Saving the XGBoost1 model at Models/XGBoost1 directory as XGBoost1.joblib
+2021-11-26/23:20:29		Successfully saving the XGBoost1 model in the Models/XGBoost1 directory.
+2021-11-26/23:20:29		Exited the save_model method of FileOperation class
+2021-11-26/23:20:29		Successfully completed the model training
+2021-11-28/15:48:58		Entered get_columns_with_zero_std in Preprocessor Class
+2021-11-28/15:48:58		Searching for all the columns with a zero standard deviation...
+2021-11-28/15:48:58		No columns with zero standard deviation
+2021-11-28/15:48:58		Exited the get_columns_with_zero_std method in the Preprocessing class
+2021-11-28/15:49:37		Entered get_columns_with_zero_std in Preprocessor Class
+2021-11-28/15:49:37		Searching for all the columns with a zero standard deviation...
+2021-11-28/15:49:37		No columns with zero standard deviation
+2021-11-28/15:49:37		Exited the get_columns_with_zero_std method in the Preprocessing class

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid bg-light text-dark p-5">
+  <h1><strong>Welcome to Concrete Compressive Strength Training & Prediction Project</strong></h1><br>
+  <h5>Click 'Train' for training the machine learning models, 'Predict' for predicting a single sample result, and 'Predict Batch Files' for predicting more than one sample from one or more csv files.</h5><br>
+  <!-- <h4>If you want to train the machine learning models with the data you have. Click 'Train' button</h4>
+  <h4>If you want to predict the concrete compressive strength for a single sample, click on 'Predict' Button below</h4>
+  <h4>If you want to predict the results for all the samples in a csv file(s). Click on 'Predict Batch Files'</h4><br> -->
+  <p></p>
+  <div class="container-fluid" align='center'>
+    <a class="fw-bold bg-success badge fs-3" style="text-decoration:none" href="{{url_for('train')}}">Train</a>
+  </div>
+  <p></p>
+  <div class="container-fluid" align='center'>
+    <a class="fw-bold bg-primary badge fs-3" style="text-decoration:none" href="{{url_for('predict_one')}}">Predict</a>
+  </div>
+  <p></p>
+  <div class="container-fluid" align='center'>
+    <a class="fw-bold bg-primary badge fs-3" style="text-decoration:none" href="{{url_for('predict_many')}}">Predict Batch Files</a>
+  </div>
+</div>
+{% endblock %}

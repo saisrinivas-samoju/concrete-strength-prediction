@@ -12,7 +12,6 @@ from Dataframe_to_Image.df_to_image import df_to_image
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecretkey'
 
-
 class InfoForm(FlaskForm):
     cement = StringField('What is the amount of Cement? in kg/m3: ', validators=[DataRequired()])
     blast_furnace_slag = StringField('What is the amount of Blast Furnace Slag? in kg/m3: ', validators=[DataRequired()])

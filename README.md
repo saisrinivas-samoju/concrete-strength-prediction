@@ -93,6 +93,36 @@
 
 <a href="https://concrete-strength--prediction.herokuapp.com/">Heroku App Link</a>
 
+### Screenshots
+
+#### Homepage
+
+<a href="https://ibb.co/Jd8cFXY"><img src="https://i.ibb.co/26RFYXz/Homepage.png" alt="Homepage" border="0"></a>
+
+#### Train page
+
+<a href="https://ibb.co/t8rHvsC"><img src="https://i.ibb.co/yWjNZys/Train-01.png" alt="Train-01" border="0"></a>
+
+#### Training Successful
+
+<a href="https://ibb.co/MccGHsT"><img src="https://i.ibb.co/bss2VPh/Train-02.png" alt="Train-02" border="0"></a>
+
+#### Predict page
+
+<a href="https://ibb.co/mDk0N4T"><img src="https://i.ibb.co/YRmX0hQ/Predict-01.png" alt="Predict-01" border="0"></a>
+
+#### Prediction Successful
+
+<a href="https://ibb.co/X4dNVRp"><img src="https://i.ibb.co/Jdb0CJ2/Predict-02.png" alt="Predict-02" border="0"></a>
+
+#### Predict Batch Files page
+
+<a href="https://ibb.co/M8zpcrJ"><img src="https://i.ibb.co/TKQR46N/Predict-Batch-Files-01.png" alt="Predict-Batch-Files-01" border="0"></a>
+
+#### Batch Files Prediction Successful
+
+<a href="https://ibb.co/k9XFTZY"><img src="https://i.ibb.co/KLWHgnC/Predict-Batch-Files-02.png" alt="Predict-Batch-Files-02" border="0"></a>
+
 ----
 
 ## Create a file "Dockerfile" with below content

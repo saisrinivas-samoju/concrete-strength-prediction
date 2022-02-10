@@ -433,11 +433,11 @@ class ModelFinder:
                 return lr_model, "LinearRegression"
             elif model_idx == 1:
                 return elastic_net_model, "ElasticNet"
-            elif model_idx == 1:
+            elif model_idx == 2:
                 return svr_model, "SupportVectorRegressor"
-            elif model_idx == 1:
+            elif model_idx == 3:
                 return dt_model, "DecisionTree"
-            elif model_idx == 1:
+            elif model_idx == 4:
                 return rf_model, "RandomForest"
             else:
                 return xgb_model, "XGBoost"

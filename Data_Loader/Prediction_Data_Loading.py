@@ -13,6 +13,7 @@ def data_loader_prediction():
         df = pd.read_csv(file_location)
         logger.log("Data Loaded Successfully!")
         return df
+        
     except Exception as e:
         logger.log(f"Error occurred while loading the data from InputFile.csv: {str(e)}")
         logger.log("Data loading unsuccessful!")

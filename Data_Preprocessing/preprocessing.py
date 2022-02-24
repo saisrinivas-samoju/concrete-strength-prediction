@@ -22,6 +22,7 @@ class Preprocessor:
             else:
                 self.logger.log("No columns to remove")
             self.logger.log("Exited the remove_columns method from Preprocessor class")
+            
         except Exception as e:
             self.logger.log(f"Error occurred while removing {columns} column(s) from the dataset.")
             self.logger.log("Exited the remove_columns method from the Preprocessing class")

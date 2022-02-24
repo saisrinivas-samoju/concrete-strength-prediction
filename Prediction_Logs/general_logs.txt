@@ -3,3 +3,23 @@
 2021-11-28/15:48:58		Good Raw directory has been deleted successfully!
 2021-11-28/15:48:58		Bad data files moved to archive
 2021-11-28/15:48:58		Bad Raw Data Folder Deleted successfully!
+2022-02-24/07:57:10		Created Good Raw Directory!
+2022-02-24/07:57:10		Created Bad Raw Directory!
+2022-02-24/07:57:13		Good Raw directory has been deleted successfully!
+2022-02-24/07:57:13		Bad data files moved to archive
+2022-02-24/07:57:13		Bad Raw Data Folder Deleted successfully!
+2022-02-24/11:26:50		Created Good Raw Directory!
+2022-02-24/11:26:50		Created Bad Raw Directory!
+2022-02-24/11:26:53		Good Raw directory has been deleted successfully!
+2022-02-24/11:26:53		Bad data files moved to archive
+2022-02-24/11:26:53		Bad Raw Data Folder Deleted successfully!
+2022-02-24/11:27:16		Created Good Raw Directory!
+2022-02-24/11:27:16		Created Bad Raw Directory!
+2022-02-24/11:27:18		Good Raw directory has been deleted successfully!
+2022-02-24/11:27:18		Bad data files moved to archive
+2022-02-24/11:27:18		Bad Raw Data Folder Deleted successfully!
+2022-02-24/14:58:07		Created Good Raw Directory!
+2022-02-24/14:58:07		Created Bad Raw Directory!
+2022-02-24/14:58:11		Good Raw directory has been deleted successfully!
+2022-02-24/14:58:11		Bad data files moved to archive
+2022-02-24/14:58:11		Bad Raw Data Folder Deleted successfully!

@@ -107,3 +107,712 @@
 2021-11-28/15:49:37		Searching for all the columns with a zero standard deviation...
 2021-11-28/15:49:37		No columns with zero standard deviation
 2021-11-28/15:49:37		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/07:57:13		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/07:57:13		Searching for all the columns with a zero standard deviation...
+2022-02-24/07:57:13		No columns with zero standard deviation
+2022-02-24/07:57:13		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/07:57:28		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/07:57:28		Searching for all the columns with a zero standard deviation...
+2022-02-24/07:57:28		No columns with zero standard deviation
+2022-02-24/07:57:28		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/07:57:41		Training Started...
+2022-02-24/07:57:41		Entered is_null_present in Preprocessor Class
+2022-02-24/07:57:41		No null values are present in the training dataset.
+2022-02-24/07:57:41		Exited the is_null_present method from the Preprocessing class
+2022-02-24/07:57:41		Entered separate_label_feature method in Preprocessor class
+2022-02-24/07:57:41		Separated Features and label successfully.
+2022-02-24/07:57:41		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/07:57:41		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/07:57:41		Searching for all the columns with a zero standard deviation...
+2022-02-24/07:57:41		No columns with zero standard deviation
+2022-02-24/07:57:41		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/07:57:41		Entered remove_columns method in Proprocessor Class
+2022-02-24/07:57:41		Remove the column(s): [] successfully
+2022-02-24/07:57:41		Entered clustering function
+2022-02-24/07:57:43		Found the optimum cluster value; k=3
+2022-02-24/07:57:43		Adding 'clusters' column to the feature set
+2022-02-24/07:57:43		Successfully added 'clusters' column to the feature set
+2022-02-24/07:57:43		Saving the clustering model for future use
+2022-02-24/07:57:43		Entered the save_model method of FileOperation class
+2022-02-24/07:57:43		Directory exists for KMeans model already
+2022-02-24/07:57:43		Deleted the existing directory for KMeans model.
+2022-02-24/07:57:43		Created a new directory for KMeans model.
+2022-02-24/07:57:43		Saving the KMeans model at Models/KMeans directory as KMeans.joblib
+2022-02-24/07:57:43		Successfully saving the KMeans model in the Models/KMeans directory.
+2022-02-24/07:57:43		Exited the save_model method of FileOperation class
+2022-02-24/07:57:43		Entered separate_label_feature method in Preprocessor class
+2022-02-24/07:57:43		Separated Features and label successfully.
+2022-02-24/07:57:43		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/07:57:43		Entered get_best_model method in ModelFinder class
+2022-02-24/07:57:43		Entered lr_model method in ModelFinder class
+2022-02-24/07:57:44		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/07:57:44		Exited lr_model method in ModelFinder class
+2022-02-24/07:57:44		Entered elastic_net_model method in ModelFinder class
+2022-02-24/07:57:48		Best parameters for elastic net model: l1_ratio=0.95; alpha=0.05281924504355254
+2022-02-24/07:57:48		Exited elastic_net_model method in ModelFinder class
+2022-02-24/07:57:48		Entered svr_model method in ModelFinder class
+2022-02-24/07:57:51		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/07:57:51		Exited svr_model method in ModelFinder class
+2022-02-24/07:57:51		Entered dt_model method in ModelFinder class
+2022-02-24/07:57:52		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/07:57:52		Exited dt_model method in ModelFinder class
+2022-02-24/07:57:52		Entered rf_model method in ModelFinder class
+2022-02-24/08:01:33		Best parameters for Random Forest model: n_estimators=150; criterion=mse; max_depth=None
+2022-02-24/08:01:33		Exited rf_model method in ModelFinder class
+2022-02-24/08:01:33		Entered xgb_model method in ModelFinder class
+2022-02-24/08:02:14		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/08:02:15		Exited xgb_model method in ModelFinder class
+2022-02-24/08:02:16		Entered the save_model method of FileOperation class
+2022-02-24/08:02:16		Directory exists for XGBoost0 model already
+2022-02-24/08:02:16		Deleted the existing directory for XGBoost0 model.
+2022-02-24/08:02:16		Created a new directory for XGBoost0 model.
+2022-02-24/08:02:16		Saving the XGBoost0 model at Models/XGBoost0 directory as XGBoost0.joblib
+2022-02-24/08:02:16		Successfully saving the XGBoost0 model in the Models/XGBoost0 directory.
+2022-02-24/08:02:16		Exited the save_model method of FileOperation class
+2022-02-24/08:02:16		Entered separate_label_feature method in Preprocessor class
+2022-02-24/08:02:16		Separated Features and label successfully.
+2022-02-24/08:02:16		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/08:02:16		Entered get_best_model method in ModelFinder class
+2022-02-24/08:02:16		Entered lr_model method in ModelFinder class
+2022-02-24/08:02:16		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/08:02:16		Exited lr_model method in ModelFinder class
+2022-02-24/08:02:16		Entered elastic_net_model method in ModelFinder class
+2022-02-24/08:02:21		Best parameters for elastic net model: l1_ratio=0.7; alpha=0.13579680731457563
+2022-02-24/08:02:21		Exited elastic_net_model method in ModelFinder class
+2022-02-24/08:02:21		Entered svr_model method in ModelFinder class
+2022-02-24/08:02:24		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/08:02:24		Exited svr_model method in ModelFinder class
+2022-02-24/08:02:24		Entered dt_model method in ModelFinder class
+2022-02-24/08:02:26		Best parameters for Decision Tree model: criterion=mse; max_depth=None
+2022-02-24/08:02:26		Exited dt_model method in ModelFinder class
+2022-02-24/08:02:26		Entered rf_model method in ModelFinder class
+2022-02-24/08:06:51		Best parameters for Random Forest model: n_estimators=100; criterion=mae; max_depth=None
+2022-02-24/08:06:53		Exited rf_model method in ModelFinder class
+2022-02-24/08:06:53		Entered xgb_model method in ModelFinder class
+2022-02-24/08:07:33		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/08:07:34		Exited xgb_model method in ModelFinder class
+2022-02-24/08:07:34		Entered the save_model method of FileOperation class
+2022-02-24/08:07:34		Directory exists for XGBoost2 model already
+2022-02-24/08:07:34		Deleted the existing directory for XGBoost2 model.
+2022-02-24/08:07:34		Created a new directory for XGBoost2 model.
+2022-02-24/08:07:34		Saving the XGBoost2 model at Models/XGBoost2 directory as XGBoost2.joblib
+2022-02-24/08:07:35		Successfully saving the XGBoost2 model in the Models/XGBoost2 directory.
+2022-02-24/08:07:35		Exited the save_model method of FileOperation class
+2022-02-24/08:07:35		Entered separate_label_feature method in Preprocessor class
+2022-02-24/08:07:35		Separated Features and label successfully.
+2022-02-24/08:07:35		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/08:07:35		Entered get_best_model method in ModelFinder class
+2022-02-24/08:07:35		Entered lr_model method in ModelFinder class
+2022-02-24/08:07:35		Best parameters for Linear Regression model: fit_intercept=True; normalize=False; copy_X=True
+2022-02-24/08:07:35		Exited lr_model method in ModelFinder class
+2022-02-24/08:07:35		Entered elastic_net_model method in ModelFinder class
+2022-02-24/08:07:39		Best parameters for elastic net model: l1_ratio=1.0; alpha=0.008129870447262976
+2022-02-24/08:07:39		Exited elastic_net_model method in ModelFinder class
+2022-02-24/08:07:39		Entered svr_model method in ModelFinder class
+2022-02-24/08:07:41		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/08:07:41		Exited svr_model method in ModelFinder class
+2022-02-24/08:07:41		Entered dt_model method in ModelFinder class
+2022-02-24/08:07:43		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/08:07:43		Exited dt_model method in ModelFinder class
+2022-02-24/08:07:43		Entered rf_model method in ModelFinder class
+2022-02-24/08:12:01		Best parameters for Random Forest model: n_estimators=150; criterion=mae; max_depth=None
+2022-02-24/08:12:04		Exited rf_model method in ModelFinder class
+2022-02-24/08:12:04		Entered xgb_model method in ModelFinder class
+2022-02-24/08:12:43		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/08:12:44		Exited xgb_model method in ModelFinder class
+2022-02-24/08:12:44		Entered the save_model method of FileOperation class
+2022-02-24/08:12:44		Directory exists for XGBoost1 model already
+2022-02-24/08:12:44		Deleted the existing directory for XGBoost1 model.
+2022-02-24/08:12:44		Created a new directory for XGBoost1 model.
+2022-02-24/08:12:44		Saving the XGBoost1 model at Models/XGBoost1 directory as XGBoost1.joblib
+2022-02-24/08:12:44		Successfully saving the XGBoost1 model in the Models/XGBoost1 directory.
+2022-02-24/08:12:44		Exited the save_model method of FileOperation class
+2022-02-24/08:12:44		Successfully completed the model training
+2022-02-24/11:26:53		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/11:26:53		Searching for all the columns with a zero standard deviation...
+2022-02-24/11:26:53		No columns with zero standard deviation
+2022-02-24/11:26:53		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/11:27:06		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/11:27:06		Searching for all the columns with a zero standard deviation...
+2022-02-24/11:27:07		No columns with zero standard deviation
+2022-02-24/11:27:07		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/11:27:18		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/11:27:18		Searching for all the columns with a zero standard deviation...
+2022-02-24/11:27:18		No columns with zero standard deviation
+2022-02-24/11:27:18		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/11:27:41		Training Started...
+2022-02-24/11:27:41		Entered is_null_present in Preprocessor Class
+2022-02-24/11:27:41		No null values are present in the training dataset.
+2022-02-24/11:27:41		Exited the is_null_present method from the Preprocessing class
+2022-02-24/11:27:41		Entered separate_label_feature method in Preprocessor class
+2022-02-24/11:27:41		Error occurred while separating features and label in the dataset.
+2022-02-24/11:27:41		Exited the separate_label_feature method from the Preprocessing class
+2022-02-24/11:27:41		Model training Failed
+2022-02-24/11:27:41		Error occurred while training the models
+2022-02-24/11:27:41		Exited model_training method in TrainModel Class
+2022-02-24/11:30:47		Training Started...
+2022-02-24/11:30:47		Entered is_null_present in Preprocessor Class
+2022-02-24/11:30:47		No null values are present in the training dataset.
+2022-02-24/11:30:47		Exited the is_null_present method from the Preprocessing class
+2022-02-24/11:30:47		Entered separate_label_feature method in Preprocessor class
+2022-02-24/11:30:47		Error occurred while separating features and label in the dataset.
+2022-02-24/11:30:47		Exited the separate_label_feature method from the Preprocessing class
+2022-02-24/11:30:47		Model training Failed
+2022-02-24/11:30:47		Error occurred while training the models
+2022-02-24/11:30:47		Exited model_training method in TrainModel Class
+2022-02-24/11:31:31		Training Started...
+2022-02-24/11:31:31		Entered is_null_present in Preprocessor Class
+2022-02-24/11:31:31		No null values are present in the training dataset.
+2022-02-24/11:31:31		Exited the is_null_present method from the Preprocessing class
+2022-02-24/11:31:31		Entered separate_label_feature method in Preprocessor class
+2022-02-24/11:31:31		Error occurred while separating features and label in the dataset.
+2022-02-24/11:31:31		Exited the separate_label_feature method from the Preprocessing class
+2022-02-24/11:31:31		Model training Failed
+2022-02-24/11:31:31		Error occurred while training the models
+2022-02-24/11:31:31		Exited model_training method in TrainModel Class
+2022-02-24/11:35:34		Training Started...
+2022-02-24/11:35:34		Entered is_null_present in Preprocessor Class
+2022-02-24/11:35:34		No null values are present in the training dataset.
+2022-02-24/11:35:34		Exited the is_null_present method from the Preprocessing class
+2022-02-24/11:35:34		Entered separate_label_feature method in Preprocessor class
+2022-02-24/11:35:34		Separated Features and label successfully.
+2022-02-24/11:35:34		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/11:35:34		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/11:35:34		Searching for all the columns with a zero standard deviation...
+2022-02-24/11:35:34		No columns with zero standard deviation
+2022-02-24/11:35:34		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/11:35:34		Entered remove_columns method in Proprocessor Class
+2022-02-24/11:35:34		Remove the column(s): [] successfully
+2022-02-24/11:35:34		Entered clustering function
+2022-02-24/11:35:36		Found the optimum cluster value; k=3
+2022-02-24/11:35:36		Adding 'clusters' column to the feature set
+2022-02-24/11:35:36		Successfully added 'clusters' column to the feature set
+2022-02-24/11:35:36		Saving the clustering model for future use
+2022-02-24/11:35:36		Entered the save_model method of FileOperation class
+2022-02-24/11:35:36		Directory exists for KMeans model already
+2022-02-24/11:35:36		Deleted the existing directory for KMeans model.
+2022-02-24/11:35:36		Created a new directory for KMeans model.
+2022-02-24/11:35:36		Saving the KMeans model at Models/KMeans directory as KMeans.joblib
+2022-02-24/11:35:36		Successfully saving the KMeans model in the Models/KMeans directory.
+2022-02-24/11:35:36		Exited the save_model method of FileOperation class
+2022-02-24/11:35:36		Entered separate_label_feature method in Preprocessor class
+2022-02-24/11:35:36		Separated Features and label successfully.
+2022-02-24/11:35:36		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/11:35:36		Entered get_best_model method in ModelFinder class
+2022-02-24/11:35:36		Entered lr_model method in ModelFinder class
+2022-02-24/11:35:37		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/11:35:37		Exited lr_model method in ModelFinder class
+2022-02-24/11:35:37		Entered elastic_net_model method in ModelFinder class
+2022-02-24/11:35:41		Best parameters for elastic net model: l1_ratio=0.95; alpha=0.05281924504355254
+2022-02-24/11:35:41		Exited elastic_net_model method in ModelFinder class
+2022-02-24/11:35:41		Entered svr_model method in ModelFinder class
+2022-02-24/11:35:43		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/11:35:43		Exited svr_model method in ModelFinder class
+2022-02-24/11:35:43		Entered dt_model method in ModelFinder class
+2022-02-24/11:35:45		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/11:35:45		Exited dt_model method in ModelFinder class
+2022-02-24/11:35:45		Entered rf_model method in ModelFinder class
+2022-02-24/11:39:24		Best parameters for Random Forest model: n_estimators=50; criterion=mse; max_depth=None
+2022-02-24/11:39:25		Exited rf_model method in ModelFinder class
+2022-02-24/11:39:25		Entered xgb_model method in ModelFinder class
+2022-02-24/11:40:02		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/11:40:04		Exited xgb_model method in ModelFinder class
+2022-02-24/11:40:04		Entered the save_model method of FileOperation class
+2022-02-24/11:40:04		Directory exists for XGBoost2 model already
+2022-02-24/11:40:04		Deleted the existing directory for XGBoost2 model.
+2022-02-24/11:40:04		Created a new directory for XGBoost2 model.
+2022-02-24/11:40:04		Saving the XGBoost2 model at Models/XGBoost2 directory as XGBoost2.joblib
+2022-02-24/11:40:04		Successfully saving the XGBoost2 model in the Models/XGBoost2 directory.
+2022-02-24/11:40:04		Exited the save_model method of FileOperation class
+2022-02-24/11:40:04		Entered separate_label_feature method in Preprocessor class
+2022-02-24/11:40:04		Separated Features and label successfully.
+2022-02-24/11:40:04		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/11:40:04		Entered get_best_model method in ModelFinder class
+2022-02-24/11:40:04		Entered lr_model method in ModelFinder class
+2022-02-24/11:40:04		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/11:40:04		Exited lr_model method in ModelFinder class
+2022-02-24/11:40:04		Entered elastic_net_model method in ModelFinder class
+2022-02-24/11:40:08		Best parameters for elastic net model: l1_ratio=0.7; alpha=0.13579680731457563
+2022-02-24/11:40:08		Exited elastic_net_model method in ModelFinder class
+2022-02-24/11:40:08		Entered svr_model method in ModelFinder class
+2022-02-24/11:40:11		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/11:40:11		Exited svr_model method in ModelFinder class
+2022-02-24/11:40:11		Entered dt_model method in ModelFinder class
+2022-02-24/11:40:12		Best parameters for Decision Tree model: criterion=mse; max_depth=None
+2022-02-24/11:40:12		Exited dt_model method in ModelFinder class
+2022-02-24/11:40:12		Entered rf_model method in ModelFinder class
+2022-02-24/11:44:31		Best parameters for Random Forest model: n_estimators=50; criterion=mae; max_depth=None
+2022-02-24/11:44:32		Exited rf_model method in ModelFinder class
+2022-02-24/11:44:32		Entered xgb_model method in ModelFinder class
+2022-02-24/11:45:11		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/11:45:12		Exited xgb_model method in ModelFinder class
+2022-02-24/11:45:12		Entered the save_model method of FileOperation class
+2022-02-24/11:45:12		Saving the RandomForest0 model at Models/RandomForest0 directory as RandomForest0.joblib
+2022-02-24/11:45:13		Successfully saving the RandomForest0 model in the Models/RandomForest0 directory.
+2022-02-24/11:45:13		Exited the save_model method of FileOperation class
+2022-02-24/11:45:13		Entered separate_label_feature method in Preprocessor class
+2022-02-24/11:45:13		Separated Features and label successfully.
+2022-02-24/11:45:13		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/11:45:13		Entered get_best_model method in ModelFinder class
+2022-02-24/11:45:13		Entered lr_model method in ModelFinder class
+2022-02-24/11:45:13		Best parameters for Linear Regression model: fit_intercept=True; normalize=False; copy_X=True
+2022-02-24/11:45:13		Exited lr_model method in ModelFinder class
+2022-02-24/11:45:13		Entered elastic_net_model method in ModelFinder class
+2022-02-24/11:45:17		Best parameters for elastic net model: l1_ratio=1.0; alpha=0.008129870447262976
+2022-02-24/11:45:17		Exited elastic_net_model method in ModelFinder class
+2022-02-24/11:45:17		Entered svr_model method in ModelFinder class
+2022-02-24/11:45:19		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/11:45:19		Exited svr_model method in ModelFinder class
+2022-02-24/11:45:19		Entered dt_model method in ModelFinder class
+2022-02-24/11:45:21		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/11:45:21		Exited dt_model method in ModelFinder class
+2022-02-24/11:45:21		Entered rf_model method in ModelFinder class
+2022-02-24/11:49:21		Best parameters for Random Forest model: n_estimators=100; criterion=mse; max_depth=None
+2022-02-24/11:49:22		Exited rf_model method in ModelFinder class
+2022-02-24/11:49:22		Entered xgb_model method in ModelFinder class
+2022-02-24/11:50:00		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/11:50:01		Exited xgb_model method in ModelFinder class
+2022-02-24/11:50:01		Entered the save_model method of FileOperation class
+2022-02-24/11:50:01		Directory exists for XGBoost1 model already
+2022-02-24/11:50:01		Deleted the existing directory for XGBoost1 model.
+2022-02-24/11:50:01		Created a new directory for XGBoost1 model.
+2022-02-24/11:50:01		Saving the XGBoost1 model at Models/XGBoost1 directory as XGBoost1.joblib
+2022-02-24/11:50:02		Successfully saving the XGBoost1 model in the Models/XGBoost1 directory.
+2022-02-24/11:50:02		Exited the save_model method of FileOperation class
+2022-02-24/11:50:02		Successfully completed the model training
+2022-02-24/11:58:59		Training Started...
+2022-02-24/11:58:59		Entered is_null_present in Preprocessor Class
+2022-02-24/11:58:59		No null values are present in the training dataset.
+2022-02-24/11:58:59		Exited the is_null_present method from the Preprocessing class
+2022-02-24/11:58:59		Entered separate_label_feature method in Preprocessor class
+2022-02-24/11:58:59		Separated Features and label successfully.
+2022-02-24/11:58:59		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/11:58:59		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/11:58:59		Searching for all the columns with a zero standard deviation...
+2022-02-24/11:58:59		No columns with zero standard deviation
+2022-02-24/11:58:59		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/11:58:59		Entered remove_columns method in Proprocessor Class
+2022-02-24/11:58:59		Remove the column(s): [] successfully
+2022-02-24/11:58:59		Entered clustering function
+2022-02-24/11:59:01		Found the optimum cluster value; k=3
+2022-02-24/11:59:01		Adding 'clusters' column to the feature set
+2022-02-24/11:59:01		Successfully added 'clusters' column to the feature set
+2022-02-24/11:59:01		Saving the clustering model for future use
+2022-02-24/11:59:01		Entered the save_model method of FileOperation class
+2022-02-24/11:59:01		Directory exists for KMeans model already
+2022-02-24/11:59:01		Deleted the existing directory for KMeans model.
+2022-02-24/11:59:01		Created a new directory for KMeans model.
+2022-02-24/11:59:01		Saving the KMeans model at Models/KMeans directory as KMeans.joblib
+2022-02-24/11:59:01		Successfully saving the KMeans model in the Models/KMeans directory.
+2022-02-24/11:59:01		Exited the save_model method of FileOperation class
+2022-02-24/11:59:01		Entered separate_label_feature method in Preprocessor class
+2022-02-24/11:59:01		Separated Features and label successfully.
+2022-02-24/11:59:01		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/11:59:01		Entered get_best_model method in ModelFinder class
+2022-02-24/11:59:01		Entered lr_model method in ModelFinder class
+2022-02-24/11:59:01		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/11:59:01		Exited lr_model method in ModelFinder class
+2022-02-24/11:59:01		Entered elastic_net_model method in ModelFinder class
+2022-02-24/11:59:05		Best parameters for elastic net model: l1_ratio=0.7; alpha=0.010580042653332468
+2022-02-24/11:59:05		Exited elastic_net_model method in ModelFinder class
+2022-02-24/11:59:05		Entered svr_model method in ModelFinder class
+2022-02-24/11:59:12		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/11:59:12		Exited svr_model method in ModelFinder class
+2022-02-24/11:59:12		Entered dt_model method in ModelFinder class
+2022-02-24/11:59:15		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/11:59:15		Exited dt_model method in ModelFinder class
+2022-02-24/11:59:15		Entered rf_model method in ModelFinder class
+2022-02-24/12:06:08		Best parameters for Random Forest model: n_estimators=50; criterion=mse; max_depth=None
+2022-02-24/12:06:08		Exited rf_model method in ModelFinder class
+2022-02-24/12:06:08		Entered xgb_model method in ModelFinder class
+2022-02-24/12:06:51		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/12:06:52		Exited xgb_model method in ModelFinder class
+2022-02-24/12:06:52		Entered the save_model method of FileOperation class
+2022-02-24/12:06:52		Directory exists for XGBoost0 model already
+2022-02-24/12:06:52		Deleted the existing directory for XGBoost0 model.
+2022-02-24/12:06:52		Created a new directory for XGBoost0 model.
+2022-02-24/12:06:52		Saving the XGBoost0 model at Models/XGBoost0 directory as XGBoost0.joblib
+2022-02-24/12:06:52		Successfully saving the XGBoost0 model in the Models/XGBoost0 directory.
+2022-02-24/12:06:52		Exited the save_model method of FileOperation class
+2022-02-24/12:06:52		Entered separate_label_feature method in Preprocessor class
+2022-02-24/12:06:52		Separated Features and label successfully.
+2022-02-24/12:06:52		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/12:06:52		Entered get_best_model method in ModelFinder class
+2022-02-24/12:06:52		Entered lr_model method in ModelFinder class
+2022-02-24/12:06:53		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/12:06:53		Exited lr_model method in ModelFinder class
+2022-02-24/12:06:53		Entered elastic_net_model method in ModelFinder class
+2022-02-24/12:06:57		Best parameters for elastic net model: l1_ratio=1.0; alpha=0.04443995046792335
+2022-02-24/12:06:57		Exited elastic_net_model method in ModelFinder class
+2022-02-24/12:06:57		Entered svr_model method in ModelFinder class
+2022-02-24/12:07:04		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/12:07:04		Exited svr_model method in ModelFinder class
+2022-02-24/12:07:04		Entered dt_model method in ModelFinder class
+2022-02-24/12:07:07		Best parameters for Decision Tree model: criterion=friedman_mse; max_depth=None
+2022-02-24/12:07:07		Exited dt_model method in ModelFinder class
+2022-02-24/12:07:07		Entered rf_model method in ModelFinder class
+2022-02-24/12:15:16		Best parameters for Random Forest model: n_estimators=100; criterion=mse; max_depth=None
+2022-02-24/12:15:17		Exited rf_model method in ModelFinder class
+2022-02-24/12:15:17		Entered xgb_model method in ModelFinder class
+2022-02-24/12:16:03		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/12:16:04		Exited xgb_model method in ModelFinder class
+2022-02-24/12:16:04		Entered the save_model method of FileOperation class
+2022-02-24/12:16:04		Directory exists for XGBoost2 model already
+2022-02-24/12:16:04		Deleted the existing directory for XGBoost2 model.
+2022-02-24/12:16:04		Created a new directory for XGBoost2 model.
+2022-02-24/12:16:04		Saving the XGBoost2 model at Models/XGBoost2 directory as XGBoost2.joblib
+2022-02-24/12:16:04		Successfully saving the XGBoost2 model in the Models/XGBoost2 directory.
+2022-02-24/12:16:04		Exited the save_model method of FileOperation class
+2022-02-24/12:16:04		Entered separate_label_feature method in Preprocessor class
+2022-02-24/12:16:04		Separated Features and label successfully.
+2022-02-24/12:16:04		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/12:16:04		Entered get_best_model method in ModelFinder class
+2022-02-24/12:16:04		Entered lr_model method in ModelFinder class
+2022-02-24/12:16:05		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/12:16:05		Exited lr_model method in ModelFinder class
+2022-02-24/12:16:05		Entered elastic_net_model method in ModelFinder class
+2022-02-24/12:16:09		Best parameters for elastic net model: l1_ratio=0.95; alpha=0.007130870192241407
+2022-02-24/12:16:09		Exited elastic_net_model method in ModelFinder class
+2022-02-24/12:16:09		Entered svr_model method in ModelFinder class
+2022-02-24/12:16:16		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/12:16:16		Exited svr_model method in ModelFinder class
+2022-02-24/12:16:16		Entered dt_model method in ModelFinder class
+2022-02-24/12:16:18		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/12:16:18		Exited dt_model method in ModelFinder class
+2022-02-24/12:16:18		Entered rf_model method in ModelFinder class
+2022-02-24/12:24:07		Best parameters for Random Forest model: n_estimators=200; criterion=mae; max_depth=None
+2022-02-24/12:24:15		Exited rf_model method in ModelFinder class
+2022-02-24/12:24:15		Entered xgb_model method in ModelFinder class
+2022-02-24/12:25:11		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/12:25:12		Exited xgb_model method in ModelFinder class
+2022-02-24/12:25:12		Entered the save_model method of FileOperation class
+2022-02-24/12:25:12		Saving the DecisionTree1 model at Models/DecisionTree1 directory as DecisionTree1.joblib
+2022-02-24/12:25:12		Successfully saving the DecisionTree1 model in the Models/DecisionTree1 directory.
+2022-02-24/12:25:12		Exited the save_model method of FileOperation class
+2022-02-24/12:25:12		Successfully completed the model training
+2022-02-24/12:37:03		Training Started...
+2022-02-24/12:37:03		Entered is_null_present in Preprocessor Class
+2022-02-24/12:37:03		No null values are present in the training dataset.
+2022-02-24/12:37:03		Exited the is_null_present method from the Preprocessing class
+2022-02-24/12:37:03		Entered separate_label_feature method in Preprocessor class
+2022-02-24/12:37:03		Separated Features and label successfully.
+2022-02-24/12:37:03		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/12:37:03		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/12:37:03		Searching for all the columns with a zero standard deviation...
+2022-02-24/12:37:03		No columns with zero standard deviation
+2022-02-24/12:37:03		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/12:37:03		Entered remove_columns method in Proprocessor Class
+2022-02-24/12:37:03		Remove the column(s): [] successfully
+2022-02-24/12:37:03		Entered clustering function
+2022-02-24/12:37:05		Found the optimum cluster value; k=3
+2022-02-24/12:37:05		Adding 'clusters' column to the feature set
+2022-02-24/12:37:05		Successfully added 'clusters' column to the feature set
+2022-02-24/12:37:05		Saving the clustering model for future use
+2022-02-24/12:37:05		Entered the save_model method of FileOperation class
+2022-02-24/12:37:05		Saving the KMeans model at Models/KMeans directory as KMeans.joblib
+2022-02-24/12:37:05		Successfully saving the KMeans model in the Models/KMeans directory.
+2022-02-24/12:37:05		Exited the save_model method of FileOperation class
+2022-02-24/12:37:05		Entered separate_label_feature method in Preprocessor class
+2022-02-24/12:37:05		Separated Features and label successfully.
+2022-02-24/12:37:05		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/12:37:05		Entered get_best_model method in ModelFinder class
+2022-02-24/12:37:05		Entered lr_model method in ModelFinder class
+2022-02-24/12:37:05		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/12:37:05		Exited lr_model method in ModelFinder class
+2022-02-24/12:37:05		Entered elastic_net_model method in ModelFinder class
+2022-02-24/12:37:10		Best parameters for elastic net model: l1_ratio=0.95; alpha=0.05281924504355254
+2022-02-24/12:37:10		Exited elastic_net_model method in ModelFinder class
+2022-02-24/12:37:10		Entered svr_model method in ModelFinder class
+2022-02-24/12:37:11		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/12:37:11		Exited svr_model method in ModelFinder class
+2022-02-24/12:37:11		Entered dt_model method in ModelFinder class
+2022-02-24/12:37:13		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/12:37:13		Exited dt_model method in ModelFinder class
+2022-02-24/12:37:13		Entered rf_model method in ModelFinder class
+2022-02-24/12:40:58		Best parameters for Random Forest model: n_estimators=200; criterion=mse; max_depth=None
+2022-02-24/12:40:58		Exited rf_model method in ModelFinder class
+2022-02-24/12:40:58		Entered xgb_model method in ModelFinder class
+2022-02-24/12:41:37		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/12:41:38		Exited xgb_model method in ModelFinder class
+2022-02-24/12:41:38		Entered the save_model method of FileOperation class
+2022-02-24/12:41:38		Saving the XGBoost2 model at Models/XGBoost2 directory as XGBoost2.joblib
+2022-02-24/12:41:38		Successfully saving the XGBoost2 model in the Models/XGBoost2 directory.
+2022-02-24/12:41:38		Exited the save_model method of FileOperation class
+2022-02-24/12:41:38		Entered separate_label_feature method in Preprocessor class
+2022-02-24/12:41:38		Separated Features and label successfully.
+2022-02-24/12:41:38		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/12:41:38		Entered get_best_model method in ModelFinder class
+2022-02-24/12:41:38		Entered lr_model method in ModelFinder class
+2022-02-24/12:41:39		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/12:41:39		Exited lr_model method in ModelFinder class
+2022-02-24/12:41:39		Entered elastic_net_model method in ModelFinder class
+2022-02-24/12:41:43		Best parameters for elastic net model: l1_ratio=0.7; alpha=0.13579680731457563
+2022-02-24/12:41:43		Exited elastic_net_model method in ModelFinder class
+2022-02-24/12:41:43		Entered svr_model method in ModelFinder class
+2022-02-24/12:41:45		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/12:41:45		Exited svr_model method in ModelFinder class
+2022-02-24/12:41:45		Entered dt_model method in ModelFinder class
+2022-02-24/12:41:46		Best parameters for Decision Tree model: criterion=mse; max_depth=None
+2022-02-24/12:41:46		Exited dt_model method in ModelFinder class
+2022-02-24/12:41:46		Entered rf_model method in ModelFinder class
+2022-02-24/12:48:22		Best parameters for Random Forest model: n_estimators=150; criterion=mae; max_depth=None
+2022-02-24/12:48:28		Exited rf_model method in ModelFinder class
+2022-02-24/12:48:28		Entered xgb_model method in ModelFinder class
+2022-02-24/12:49:46		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/12:49:49		Exited xgb_model method in ModelFinder class
+2022-02-24/12:49:49		Entered the save_model method of FileOperation class
+2022-02-24/12:49:49		Saving the RandomForest0 model at Models/RandomForest0 directory as RandomForest0.joblib
+2022-02-24/12:49:49		Successfully saving the RandomForest0 model in the Models/RandomForest0 directory.
+2022-02-24/12:49:49		Exited the save_model method of FileOperation class
+2022-02-24/12:49:49		Entered separate_label_feature method in Preprocessor class
+2022-02-24/12:49:49		Separated Features and label successfully.
+2022-02-24/12:49:49		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/12:49:49		Entered get_best_model method in ModelFinder class
+2022-02-24/12:49:49		Entered lr_model method in ModelFinder class
+2022-02-24/12:49:49		Best parameters for Linear Regression model: fit_intercept=True; normalize=False; copy_X=True
+2022-02-24/12:49:49		Exited lr_model method in ModelFinder class
+2022-02-24/12:49:49		Entered elastic_net_model method in ModelFinder class
+2022-02-24/12:49:56		Best parameters for elastic net model: l1_ratio=1.0; alpha=0.008129870447262976
+2022-02-24/12:49:56		Exited elastic_net_model method in ModelFinder class
+2022-02-24/12:49:56		Entered svr_model method in ModelFinder class
+2022-02-24/12:49:59		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/12:50:00		Exited svr_model method in ModelFinder class
+2022-02-24/12:50:00		Entered dt_model method in ModelFinder class
+2022-02-24/12:50:02		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/12:50:02		Exited dt_model method in ModelFinder class
+2022-02-24/12:50:02		Entered rf_model method in ModelFinder class
+2022-02-24/12:56:44		Best parameters for Random Forest model: n_estimators=100; criterion=mse; max_depth=None
+2022-02-24/12:56:45		Exited rf_model method in ModelFinder class
+2022-02-24/12:56:45		Entered xgb_model method in ModelFinder class
+2022-02-24/12:57:53		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/12:57:56		Exited xgb_model method in ModelFinder class
+2022-02-24/12:57:56		Entered the save_model method of FileOperation class
+2022-02-24/12:57:56		Saving the XGBoost1 model at Models/XGBoost1 directory as XGBoost1.joblib
+2022-02-24/12:57:56		Successfully saving the XGBoost1 model in the Models/XGBoost1 directory.
+2022-02-24/12:57:56		Exited the save_model method of FileOperation class
+2022-02-24/12:57:56		Successfully completed the model training
+2022-02-24/13:13:50		Training Started...
+2022-02-24/13:13:50		Entered is_null_present in Preprocessor Class
+2022-02-24/13:13:50		No null values are present in the training dataset.
+2022-02-24/13:13:50		Exited the is_null_present method from the Preprocessing class
+2022-02-24/13:13:50		Entered separate_label_feature method in Preprocessor class
+2022-02-24/13:13:50		Separated Features and label successfully.
+2022-02-24/13:13:50		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/13:13:50		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/13:13:50		Searching for all the columns with a zero standard deviation...
+2022-02-24/13:13:50		No columns with zero standard deviation
+2022-02-24/13:13:50		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/13:13:50		Entered remove_columns method in Proprocessor Class
+2022-02-24/13:13:50		Remove the column(s): [] successfully
+2022-02-24/13:13:50		Entered clustering function
+2022-02-24/13:13:54		Found the optimum cluster value; k=3
+2022-02-24/13:13:54		Adding 'clusters' column to the feature set
+2022-02-24/13:13:54		Successfully added 'clusters' column to the feature set
+2022-02-24/13:13:54		Saving the clustering model for future use
+2022-02-24/13:13:54		Entered the save_model method of FileOperation class
+2022-02-24/13:13:54		Directory exists for KMeans model already
+2022-02-24/13:13:54		Deleted the existing directory for KMeans model.
+2022-02-24/13:13:54		Created a new directory for KMeans model.
+2022-02-24/13:13:54		Saving the KMeans model at Models/KMeans directory as KMeans.joblib
+2022-02-24/13:13:54		Successfully saving the KMeans model in the Models/KMeans directory.
+2022-02-24/13:13:54		Exited the save_model method of FileOperation class
+2022-02-24/13:13:54		Entered separate_label_feature method in Preprocessor class
+2022-02-24/13:13:54		Separated Features and label successfully.
+2022-02-24/13:13:54		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/13:13:54		Entered get_best_model method in ModelFinder class
+2022-02-24/13:13:54		Entered lr_model method in ModelFinder class
+2022-02-24/13:13:54		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/13:13:54		Exited lr_model method in ModelFinder class
+2022-02-24/13:13:54		Entered elastic_net_model method in ModelFinder class
+2022-02-24/13:14:01		Best parameters for elastic net model: l1_ratio=0.7; alpha=0.010580042653332468
+2022-02-24/13:14:01		Exited elastic_net_model method in ModelFinder class
+2022-02-24/13:14:01		Entered svr_model method in ModelFinder class
+2022-02-24/13:14:12		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/13:14:13		Exited svr_model method in ModelFinder class
+2022-02-24/13:14:13		Entered dt_model method in ModelFinder class
+2022-02-24/13:14:17		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/13:14:17		Exited dt_model method in ModelFinder class
+2022-02-24/13:14:17		Entered rf_model method in ModelFinder class
+2022-02-24/13:26:37		Best parameters for Random Forest model: n_estimators=50; criterion=mse; max_depth=None
+2022-02-24/13:26:38		Exited rf_model method in ModelFinder class
+2022-02-24/13:26:38		Entered xgb_model method in ModelFinder class
+2022-02-24/13:28:09		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/13:28:12		Exited xgb_model method in ModelFinder class
+2022-02-24/13:28:12		Entered the save_model method of FileOperation class
+2022-02-24/13:28:12		Directory exists for XGBoost2 model already
+2022-02-24/13:28:12		Deleted the existing directory for XGBoost2 model.
+2022-02-24/13:28:12		Created a new directory for XGBoost2 model.
+2022-02-24/13:28:12		Saving the XGBoost2 model at Models/XGBoost2 directory as XGBoost2.joblib
+2022-02-24/13:28:12		Successfully saving the XGBoost2 model in the Models/XGBoost2 directory.
+2022-02-24/13:28:12		Exited the save_model method of FileOperation class
+2022-02-24/13:28:12		Entered separate_label_feature method in Preprocessor class
+2022-02-24/13:28:13		Separated Features and label successfully.
+2022-02-24/13:28:13		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/13:28:13		Entered get_best_model method in ModelFinder class
+2022-02-24/13:28:13		Entered lr_model method in ModelFinder class
+2022-02-24/13:28:13		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/13:28:13		Exited lr_model method in ModelFinder class
+2022-02-24/13:28:13		Entered elastic_net_model method in ModelFinder class
+2022-02-24/13:28:20		Best parameters for elastic net model: l1_ratio=1.0; alpha=0.04443995046792335
+2022-02-24/13:28:20		Exited elastic_net_model method in ModelFinder class
+2022-02-24/13:28:20		Entered svr_model method in ModelFinder class
+2022-02-24/13:28:32		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/13:28:32		Exited svr_model method in ModelFinder class
+2022-02-24/13:28:32		Entered dt_model method in ModelFinder class
+2022-02-24/13:28:37		Best parameters for Decision Tree model: criterion=friedman_mse; max_depth=None
+2022-02-24/13:28:37		Exited dt_model method in ModelFinder class
+2022-02-24/13:28:37		Entered rf_model method in ModelFinder class
+2022-02-24/13:44:33		Best parameters for Random Forest model: n_estimators=100; criterion=mse; max_depth=None
+2022-02-24/13:44:35		Exited rf_model method in ModelFinder class
+2022-02-24/13:44:35		Entered xgb_model method in ModelFinder class
+2022-02-24/13:46:16		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/13:46:20		Exited xgb_model method in ModelFinder class
+2022-02-24/13:46:20		Entered the save_model method of FileOperation class
+2022-02-24/13:46:20		Directory exists for XGBoost1 model already
+2022-02-24/13:46:20		Deleted the existing directory for XGBoost1 model.
+2022-02-24/13:46:20		Created a new directory for XGBoost1 model.
+2022-02-24/13:46:20		Saving the XGBoost1 model at Models/XGBoost1 directory as XGBoost1.joblib
+2022-02-24/13:46:20		Successfully saving the XGBoost1 model in the Models/XGBoost1 directory.
+2022-02-24/13:46:20		Exited the save_model method of FileOperation class
+2022-02-24/13:46:20		Entered separate_label_feature method in Preprocessor class
+2022-02-24/13:46:20		Separated Features and label successfully.
+2022-02-24/13:46:20		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/13:46:20		Entered get_best_model method in ModelFinder class
+2022-02-24/13:46:20		Entered lr_model method in ModelFinder class
+2022-02-24/13:46:21		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/13:46:21		Exited lr_model method in ModelFinder class
+2022-02-24/13:46:21		Entered elastic_net_model method in ModelFinder class
+2022-02-24/13:46:28		Best parameters for elastic net model: l1_ratio=0.95; alpha=0.007130870192241407
+2022-02-24/13:46:28		Exited elastic_net_model method in ModelFinder class
+2022-02-24/13:46:28		Entered svr_model method in ModelFinder class
+2022-02-24/13:46:41		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/13:46:42		Exited svr_model method in ModelFinder class
+2022-02-24/13:46:42		Entered dt_model method in ModelFinder class
+2022-02-24/13:46:46		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/13:46:46		Exited dt_model method in ModelFinder class
+2022-02-24/13:46:46		Entered rf_model method in ModelFinder class
+2022-02-24/14:00:20		Best parameters for Random Forest model: n_estimators=100; criterion=mae; max_depth=None
+2022-02-24/14:00:27		Exited rf_model method in ModelFinder class
+2022-02-24/14:00:27		Entered xgb_model method in ModelFinder class
+2022-02-24/14:01:59		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/14:02:02		Exited xgb_model method in ModelFinder class
+2022-02-24/14:02:02		Entered the save_model method of FileOperation class
+2022-02-24/14:02:02		Saving the DecisionTree0 model at Models/DecisionTree0 directory as DecisionTree0.joblib
+2022-02-24/14:02:02		Successfully saving the DecisionTree0 model in the Models/DecisionTree0 directory.
+2022-02-24/14:02:02		Exited the save_model method of FileOperation class
+2022-02-24/14:02:02		Successfully completed the model training
+2022-02-24/14:20:22		Training Started...
+2022-02-24/14:20:22		Entered is_null_present in Preprocessor Class
+2022-02-24/14:20:22		No null values are present in the training dataset.
+2022-02-24/14:20:22		Exited the is_null_present method from the Preprocessing class
+2022-02-24/14:20:22		Entered separate_label_feature method in Preprocessor class
+2022-02-24/14:20:22		Separated Features and label successfully.
+2022-02-24/14:20:22		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/14:20:22		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/14:20:22		Searching for all the columns with a zero standard deviation...
+2022-02-24/14:20:22		No columns with zero standard deviation
+2022-02-24/14:20:22		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/14:20:22		Entered remove_columns method in Proprocessor Class
+2022-02-24/14:20:22		Remove the column(s): [] successfully
+2022-02-24/14:20:22		Entered clustering function
+2022-02-24/14:20:25		Found the optimum cluster value; k=3
+2022-02-24/14:20:25		Adding 'clusters' column to the feature set
+2022-02-24/14:20:26		Successfully added 'clusters' column to the feature set
+2022-02-24/14:20:26		Saving the clustering model for future use
+2022-02-24/14:20:26		Entered the save_model method of FileOperation class
+2022-02-24/14:20:26		Directory exists for KMeans model already
+2022-02-24/14:20:26		Deleted the existing directory for KMeans model.
+2022-02-24/14:20:26		Created a new directory for KMeans model.
+2022-02-24/14:20:26		Saving the KMeans model at Models/KMeans directory as KMeans.joblib
+2022-02-24/14:20:26		Successfully saving the KMeans model in the Models/KMeans directory.
+2022-02-24/14:20:26		Exited the save_model method of FileOperation class
+2022-02-24/14:20:26		Entered separate_label_feature method in Preprocessor class
+2022-02-24/14:20:26		Separated Features and label successfully.
+2022-02-24/14:20:26		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/14:20:26		Entered get_best_model method in ModelFinder class
+2022-02-24/14:20:26		Entered lr_model method in ModelFinder class
+2022-02-24/14:20:26		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/14:20:26		Exited lr_model method in ModelFinder class
+2022-02-24/14:20:26		Entered elastic_net_model method in ModelFinder class
+2022-02-24/14:20:33		Best parameters for elastic net model: l1_ratio=0.95; alpha=0.05281924504355254
+2022-02-24/14:20:33		Exited elastic_net_model method in ModelFinder class
+2022-02-24/14:20:33		Entered svr_model method in ModelFinder class
+2022-02-24/14:20:37		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/14:20:37		Exited svr_model method in ModelFinder class
+2022-02-24/14:20:37		Entered dt_model method in ModelFinder class
+2022-02-24/14:20:40		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/14:20:40		Exited dt_model method in ModelFinder class
+2022-02-24/14:20:40		Entered rf_model method in ModelFinder class
+2022-02-24/14:27:04		Best parameters for Random Forest model: n_estimators=150; criterion=mse; max_depth=None
+2022-02-24/14:27:05		Exited rf_model method in ModelFinder class
+2022-02-24/14:27:05		Entered xgb_model method in ModelFinder class
+2022-02-24/14:28:13		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/14:28:15		Exited xgb_model method in ModelFinder class
+2022-02-24/14:28:15		Entered the save_model method of FileOperation class
+2022-02-24/14:28:15		Saving the XGBoost0 model at Models/XGBoost0 directory as XGBoost0.joblib
+2022-02-24/14:28:15		Successfully saving the XGBoost0 model in the Models/XGBoost0 directory.
+2022-02-24/14:28:15		Exited the save_model method of FileOperation class
+2022-02-24/14:28:15		Entered separate_label_feature method in Preprocessor class
+2022-02-24/14:28:15		Separated Features and label successfully.
+2022-02-24/14:28:15		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/14:28:15		Entered get_best_model method in ModelFinder class
+2022-02-24/14:28:15		Entered lr_model method in ModelFinder class
+2022-02-24/14:28:16		Best parameters for Linear Regression model: fit_intercept=True; normalize=True; copy_X=True
+2022-02-24/14:28:16		Exited lr_model method in ModelFinder class
+2022-02-24/14:28:16		Entered elastic_net_model method in ModelFinder class
+2022-02-24/14:28:22		Best parameters for elastic net model: l1_ratio=0.7; alpha=0.13579680731457563
+2022-02-24/14:28:22		Exited elastic_net_model method in ModelFinder class
+2022-02-24/14:28:22		Entered svr_model method in ModelFinder class
+2022-02-24/14:28:26		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/14:28:26		Exited svr_model method in ModelFinder class
+2022-02-24/14:28:26		Entered dt_model method in ModelFinder class
+2022-02-24/14:28:28		Best parameters for Decision Tree model: criterion=friedman_mse; max_depth=None
+2022-02-24/14:28:28		Exited dt_model method in ModelFinder class
+2022-02-24/14:28:28		Entered rf_model method in ModelFinder class
+2022-02-24/14:35:28		Best parameters for Random Forest model: n_estimators=50; criterion=mse; max_depth=None
+2022-02-24/14:35:29		Exited rf_model method in ModelFinder class
+2022-02-24/14:35:29		Entered xgb_model method in ModelFinder class
+2022-02-24/14:36:55		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/14:36:58		Exited xgb_model method in ModelFinder class
+2022-02-24/14:36:58		Entered the save_model method of FileOperation class
+2022-02-24/14:36:58		Saving the RandomForest1 model at Models/RandomForest1 directory as RandomForest1.joblib
+2022-02-24/14:36:58		Successfully saving the RandomForest1 model in the Models/RandomForest1 directory.
+2022-02-24/14:36:58		Exited the save_model method of FileOperation class
+2022-02-24/14:36:58		Entered separate_label_feature method in Preprocessor class
+2022-02-24/14:36:58		Separated Features and label successfully.
+2022-02-24/14:36:58		Exited the separate_label_feature method in Preprocessor class.
+2022-02-24/14:36:58		Entered get_best_model method in ModelFinder class
+2022-02-24/14:36:58		Entered lr_model method in ModelFinder class
+2022-02-24/14:36:59		Best parameters for Linear Regression model: fit_intercept=True; normalize=False; copy_X=True
+2022-02-24/14:36:59		Exited lr_model method in ModelFinder class
+2022-02-24/14:36:59		Entered elastic_net_model method in ModelFinder class
+2022-02-24/14:37:07		Best parameters for elastic net model: l1_ratio=1.0; alpha=0.008129870447262976
+2022-02-24/14:37:07		Exited elastic_net_model method in ModelFinder class
+2022-02-24/14:37:07		Entered svr_model method in ModelFinder class
+2022-02-24/14:37:11		Best parameters for SVR model: C=1; kernel=rbf; degree=2
+2022-02-24/14:37:12		Exited svr_model method in ModelFinder class
+2022-02-24/14:37:12		Entered dt_model method in ModelFinder class
+2022-02-24/14:37:15		Best parameters for Decision Tree model: criterion=mae; max_depth=None
+2022-02-24/14:37:15		Exited dt_model method in ModelFinder class
+2022-02-24/14:37:15		Entered rf_model method in ModelFinder class
+2022-02-24/14:44:01		Best parameters for Random Forest model: n_estimators=100; criterion=mae; max_depth=None
+2022-02-24/14:44:04		Exited rf_model method in ModelFinder class
+2022-02-24/14:44:04		Entered xgb_model method in ModelFinder class
+2022-02-24/14:45:11		Best parameters for XGBoost model: n_estimators=1000; learning_rate=0.1
+2022-02-24/14:45:14		Exited xgb_model method in ModelFinder class
+2022-02-24/14:45:14		Entered the save_model method of FileOperation class
+2022-02-24/14:45:14		Directory exists for XGBoost2 model already
+2022-02-24/14:45:14		Deleted the existing directory for XGBoost2 model.
+2022-02-24/14:45:14		Created a new directory for XGBoost2 model.
+2022-02-24/14:45:14		Saving the XGBoost2 model at Models/XGBoost2 directory as XGBoost2.joblib
+2022-02-24/14:45:14		Successfully saving the XGBoost2 model in the Models/XGBoost2 directory.
+2022-02-24/14:45:14		Exited the save_model method of FileOperation class
+2022-02-24/14:45:14		Successfully completed the model training
+2022-02-24/14:57:17		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/14:57:17		Searching for all the columns with a zero standard deviation...
+2022-02-24/14:57:17		No columns with zero standard deviation
+2022-02-24/14:57:17		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/14:58:11		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/14:58:11		Searching for all the columns with a zero standard deviation...
+2022-02-24/14:58:11		No columns with zero standard deviation
+2022-02-24/14:58:11		Exited the get_columns_with_zero_std method in the Preprocessing class

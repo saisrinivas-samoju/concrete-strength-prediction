@@ -31,7 +31,7 @@ class TrainModel:
                 df = preprocessor.impute_missing_values(df)
 
             # Separating feature set and label series
-            X, y = preprocessor.separate_label_feature(df, 'Concrete_compressive _strength')
+            X, y = preprocessor.separate_label_feature(df, 'Concrete_compressive_strength')
 
             # Removing if there are any columns with zero standard deviation
             zero_std_cols = preprocessor.get_columns_with_zero_std(X)
@@ -51,7 +51,7 @@ class TrainModel:
 
                 cluster_df = cluster_df.drop(columns="clusters")
 
-                cluster_X, cluster_y = preprocessor.separate_label_feature(cluster_df, 'Concrete_compressive _strength')
+                cluster_X, cluster_y = preprocessor.separate_label_feature(cluster_df, 'Concrete_compressive_strength')
 
                 # As we apply cross validation using GridSearchCV, this test size will be a hold you test set.
                 X_train, X_test, y_train, y_test = train_test_split(cluster_X, cluster_y, test_size=0.25, random_state=42)

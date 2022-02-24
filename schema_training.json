@@ -11,6 +11,6 @@
 		"Coarse Aggregate_component_6" : "FLOAT",
 		"Fine Aggregate_component_7" : "FLOAT",
 		"Age_day" : "INTEGER",
-		"Concrete_compressive _strength" : "FLOAT"
+		"Concrete_compressive_strength" : "FLOAT"
 	}
 }

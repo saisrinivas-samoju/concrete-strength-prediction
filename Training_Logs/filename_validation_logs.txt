@@ -1,3 +1,38 @@
 2021-11-26/23:03:26		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
 2021-11-26/23:03:26		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
 2021-11-26/23:03:26		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv
+2022-02-24/07:57:33		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
+2022-02-24/07:57:33		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
+2022-02-24/07:57:33		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv
+2022-02-24/11:27:25		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
+2022-02-24/11:27:25		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_123456.csv
+2022-02-24/11:27:25		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
+2022-02-24/11:27:25		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv
+2022-02-24/11:30:31		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
+2022-02-24/11:30:31		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_123456.csv
+2022-02-24/11:30:31		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
+2022-02-24/11:30:31		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv
+2022-02-24/11:31:14		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
+2022-02-24/11:31:14		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_123456.csv
+2022-02-24/11:31:14		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
+2022-02-24/11:31:14		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv
+2022-02-24/11:35:17		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
+2022-02-24/11:35:17		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_123456.csv
+2022-02-24/11:35:17		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
+2022-02-24/11:35:17		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv
+2022-02-24/11:58:42		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
+2022-02-24/11:58:42		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_123456.csv
+2022-02-24/11:58:42		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
+2022-02-24/11:58:42		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv
+2022-02-24/12:36:45		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
+2022-02-24/12:36:45		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_123456.csv
+2022-02-24/12:36:45		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
+2022-02-24/12:36:45		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv
+2022-02-24/13:13:28		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
+2022-02-24/13:13:28		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_123456.csv
+2022-02-24/13:13:28		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
+2022-02-24/13:13:28		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv
+2022-02-24/14:19:59		Valid File name!! File moved to GoodRaw Folder : concrete_strength_20072021_090716.csv
+2022-02-24/14:19:59		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_123456.csv
+2022-02-24/14:19:59		Valid File name!! File moved to GoodRaw Folder : concrete_strength_21072021_143634.csv
+2022-02-24/14:19:59		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_23072021_0110.csv

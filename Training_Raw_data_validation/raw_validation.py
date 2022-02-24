@@ -52,6 +52,7 @@ class RawDataValidation:
                 logger.log("Created Good Raw Directory!")
 
             path = os.path.join('Training_Raw_files_validated/', "Bad_Raw/")
+            
             if not os.path.isdir(path):
                 os.makedirs(path)
                 logger.log("Created Bad Raw Directory!")

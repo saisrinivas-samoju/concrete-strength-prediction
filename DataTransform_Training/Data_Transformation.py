@@ -22,5 +22,6 @@ class DataTransform:
                     logger.log(f"All the null values are replaced with 'NULL' in the file: {file}")
                 else:
                     logger.log(f"No null values are present in the file: {file}")
+                    
         except Exception as e:
             logger.log(f"Null values replacement has been failed due to: {e}")

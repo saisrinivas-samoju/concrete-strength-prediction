@@ -31,6 +31,7 @@ class ModelFinder:
             # Scaling the data
 
             scaler = StandardScaler()
+            
             scaled_X_train = scaler.fit_transform(X_train)
 
             # Creating the base model

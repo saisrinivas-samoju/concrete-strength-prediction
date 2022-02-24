@@ -35,9 +35,11 @@ class PredictionRawDataValidation:
         except ValueError:
             logger.log("ValueError:Value not found inside schema_prediction.json")
             raise ValueError
+
         except KeyError:
             logger.log("KeyError:Key value error incorrect key passed")
             raise KeyError
+            
         except Exception as e:
             logger.log(str(e))
             raise e

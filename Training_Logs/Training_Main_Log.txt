@@ -16,3 +16,162 @@
 2021-11-26/23:03:36		Data Loaded Successfully!
 2021-11-28/15:48:58		Data Loaded Successfully!
 2021-11-28/15:49:37		Data Loaded Successfully!
+2022-02-24/07:57:13		Data Loaded Successfully!
+2022-02-24/07:57:28		Data Loaded Successfully!
+2022-02-24/07:57:33		Validation of training batch files has started!
+2022-02-24/07:57:33		Raw Data Validation has been completed!
+2022-02-24/07:57:33		Data Transformation has started
+2022-02-24/07:57:33		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/07:57:33		Creating database for training data on the basis of given schema
+2022-02-24/07:57:33		Table Created Successfully!
+2022-02-24/07:57:33		Data insertion in the database has started!
+2022-02-24/07:57:41		Data has been inserted into the database successfully!
+2022-02-24/07:57:41		Creating a master csv file for training...
+2022-02-24/07:57:41		Created the csv file for training!
+2022-02-24/07:57:41		Deleting the existing Good data folder...
+2022-02-24/07:57:41		Deleted the existing Good Data Folder
+2022-02-24/07:57:41		Moving the Bad Data Folder to Archive...
+2022-02-24/07:57:41		Moved the existing Bad Data folder to Archive!
+2022-02-24/07:57:41		#### Validation for training files has been completed successfully! ####
+2022-02-24/07:57:41		Data Loaded Successfully!
+2022-02-24/11:26:53		Data Loaded Successfully!
+2022-02-24/11:27:06		Data Loaded Successfully!
+2022-02-24/11:27:18		Data Loaded Successfully!
+2022-02-24/11:27:25		Validation of training batch files has started!
+2022-02-24/11:27:25		Raw Data Validation has been completed!
+2022-02-24/11:27:25		Data Transformation has started
+2022-02-24/11:27:25		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/11:27:25		Creating database for training data on the basis of given schema
+2022-02-24/11:27:25		Table Created Successfully!
+2022-02-24/11:27:25		Data insertion in the database has started!
+2022-02-24/11:27:41		Data has been inserted into the database successfully!
+2022-02-24/11:27:41		Creating a master csv file for training...
+2022-02-24/11:27:41		Created the csv file for training!
+2022-02-24/11:27:41		Deleting the existing Good data folder...
+2022-02-24/11:27:41		Deleted the existing Good Data Folder
+2022-02-24/11:27:41		Moving the Bad Data Folder to Archive...
+2022-02-24/11:27:41		Moved the existing Bad Data folder to Archive!
+2022-02-24/11:27:41		#### Validation for training files has been completed successfully! ####
+2022-02-24/11:27:41		Data Loaded Successfully!
+2022-02-24/11:30:31		Validation of training batch files has started!
+2022-02-24/11:30:31		Raw Data Validation has been completed!
+2022-02-24/11:30:31		Data Transformation has started
+2022-02-24/11:30:31		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/11:30:31		Creating database for training data on the basis of given schema
+2022-02-24/11:30:31		Table Created Successfully!
+2022-02-24/11:30:31		Data insertion in the database has started!
+2022-02-24/11:30:47		Data has been inserted into the database successfully!
+2022-02-24/11:30:47		Creating a master csv file for training...
+2022-02-24/11:30:47		Created the csv file for training!
+2022-02-24/11:30:47		Deleting the existing Good data folder...
+2022-02-24/11:30:47		Deleted the existing Good Data Folder
+2022-02-24/11:30:47		Moving the Bad Data Folder to Archive...
+2022-02-24/11:30:47		Moved the existing Bad Data folder to Archive!
+2022-02-24/11:30:47		#### Validation for training files has been completed successfully! ####
+2022-02-24/11:30:47		Data Loaded Successfully!
+2022-02-24/11:31:14		Validation of training batch files has started!
+2022-02-24/11:31:14		Raw Data Validation has been completed!
+2022-02-24/11:31:14		Data Transformation has started
+2022-02-24/11:31:14		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/11:31:14		Creating database for training data on the basis of given schema
+2022-02-24/11:31:14		Table Created Successfully!
+2022-02-24/11:31:14		Data insertion in the database has started!
+2022-02-24/11:31:24		Validation of training batch files has started!
+2022-02-24/11:31:24		Error Occurred during training validation process
+2022-02-24/11:31:24		Exited train_validation method from TrainValidation class
+2022-02-24/11:31:31		Data has been inserted into the database successfully!
+2022-02-24/11:31:31		Creating a master csv file for training...
+2022-02-24/11:31:31		Created the csv file for training!
+2022-02-24/11:31:31		Deleting the existing Good data folder...
+2022-02-24/11:31:31		Deleted the existing Good Data Folder
+2022-02-24/11:31:31		Moving the Bad Data Folder to Archive...
+2022-02-24/11:31:31		Moved the existing Bad Data folder to Archive!
+2022-02-24/11:31:31		#### Validation for training files has been completed successfully! ####
+2022-02-24/11:31:31		Data Loaded Successfully!
+2022-02-24/11:35:17		Validation of training batch files has started!
+2022-02-24/11:35:17		Raw Data Validation has been completed!
+2022-02-24/11:35:17		Data Transformation has started
+2022-02-24/11:35:17		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/11:35:17		Creating database for training data on the basis of given schema
+2022-02-24/11:35:17		Table Created Successfully!
+2022-02-24/11:35:17		Data insertion in the database has started!
+2022-02-24/11:35:34		Data has been inserted into the database successfully!
+2022-02-24/11:35:34		Creating a master csv file for training...
+2022-02-24/11:35:34		Created the csv file for training!
+2022-02-24/11:35:34		Deleting the existing Good data folder...
+2022-02-24/11:35:34		Deleted the existing Good Data Folder
+2022-02-24/11:35:34		Moving the Bad Data Folder to Archive...
+2022-02-24/11:35:34		Moved the existing Bad Data folder to Archive!
+2022-02-24/11:35:34		#### Validation for training files has been completed successfully! ####
+2022-02-24/11:35:34		Data Loaded Successfully!
+2022-02-24/11:58:42		Validation of training batch files has started!
+2022-02-24/11:58:42		Raw Data Validation has been completed!
+2022-02-24/11:58:42		Data Transformation has started
+2022-02-24/11:58:42		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/11:58:42		Creating database for training data on the basis of given schema
+2022-02-24/11:58:42		Table Created Successfully!
+2022-02-24/11:58:42		Data insertion in the database has started!
+2022-02-24/11:58:59		Data has been inserted into the database successfully!
+2022-02-24/11:58:59		Creating a master csv file for training...
+2022-02-24/11:58:59		Created the csv file for training!
+2022-02-24/11:58:59		Deleting the existing Good data folder...
+2022-02-24/11:58:59		Deleted the existing Good Data Folder
+2022-02-24/11:58:59		Moving the Bad Data Folder to Archive...
+2022-02-24/11:58:59		Moved the existing Bad Data folder to Archive!
+2022-02-24/11:58:59		#### Validation for training files has been completed successfully! ####
+2022-02-24/11:58:59		Data Loaded Successfully!
+2022-02-24/12:36:45		Validation of training batch files has started!
+2022-02-24/12:36:45		Raw Data Validation has been completed!
+2022-02-24/12:36:45		Data Transformation has started
+2022-02-24/12:36:45		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/12:36:45		Creating database for training data on the basis of given schema
+2022-02-24/12:36:45		Table Created Successfully!
+2022-02-24/12:36:45		Data insertion in the database has started!
+2022-02-24/12:36:59		Validation of training batch files has started!
+2022-02-24/12:36:59		Error Occurred during training validation process
+2022-02-24/12:36:59		Exited train_validation method from TrainValidation class
+2022-02-24/12:37:03		Data has been inserted into the database successfully!
+2022-02-24/12:37:03		Creating a master csv file for training...
+2022-02-24/12:37:03		Created the csv file for training!
+2022-02-24/12:37:03		Deleting the existing Good data folder...
+2022-02-24/12:37:03		Deleted the existing Good Data Folder
+2022-02-24/12:37:03		Moving the Bad Data Folder to Archive...
+2022-02-24/12:37:03		Moved the existing Bad Data folder to Archive!
+2022-02-24/12:37:03		#### Validation for training files has been completed successfully! ####
+2022-02-24/12:37:03		Data Loaded Successfully!
+2022-02-24/13:13:28		Validation of training batch files has started!
+2022-02-24/13:13:28		Raw Data Validation has been completed!
+2022-02-24/13:13:28		Data Transformation has started
+2022-02-24/13:13:28		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/13:13:28		Creating database for training data on the basis of given schema
+2022-02-24/13:13:28		Table Created Successfully!
+2022-02-24/13:13:28		Data insertion in the database has started!
+2022-02-24/13:13:50		Data has been inserted into the database successfully!
+2022-02-24/13:13:50		Creating a master csv file for training...
+2022-02-24/13:13:50		Created the csv file for training!
+2022-02-24/13:13:50		Deleting the existing Good data folder...
+2022-02-24/13:13:50		Deleted the existing Good Data Folder
+2022-02-24/13:13:50		Moving the Bad Data Folder to Archive...
+2022-02-24/13:13:50		Moved the existing Bad Data folder to Archive!
+2022-02-24/13:13:50		#### Validation for training files has been completed successfully! ####
+2022-02-24/13:13:50		Data Loaded Successfully!
+2022-02-24/14:19:59		Validation of training batch files has started!
+2022-02-24/14:19:59		Raw Data Validation has been completed!
+2022-02-24/14:19:59		Data Transformation has started
+2022-02-24/14:19:59		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/14:19:59		Creating database for training data on the basis of given schema
+2022-02-24/14:20:00		Table Created Successfully!
+2022-02-24/14:20:00		Data insertion in the database has started!
+2022-02-24/14:20:22		Data has been inserted into the database successfully!
+2022-02-24/14:20:22		Creating a master csv file for training...
+2022-02-24/14:20:22		Created the csv file for training!
+2022-02-24/14:20:22		Deleting the existing Good data folder...
+2022-02-24/14:20:22		Deleted the existing Good Data Folder
+2022-02-24/14:20:22		Moving the Bad Data Folder to Archive...
+2022-02-24/14:20:22		Moved the existing Bad Data folder to Archive!
+2022-02-24/14:20:22		#### Validation for training files has been completed successfully! ####
+2022-02-24/14:20:22		Data Loaded Successfully!
+2022-02-24/14:57:17		Data Loaded Successfully!
+2022-02-24/14:57:17		Dropped duplicate values from the dataframe!
+2022-02-24/14:58:11		Data Loaded Successfully!
+2022-02-24/14:58:11		Dropped duplicate values from the dataframe!

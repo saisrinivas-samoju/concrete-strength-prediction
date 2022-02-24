@@ -1,6 +1,10 @@
 # Concrete Compressive Strength prediction
 
+---
 
+## Link
+
+<a href="https://concrete-strength--prediction.herokuapp.com/">Heroku App Link</a>
 
 #### Problem Statement:
 
@@ -88,10 +92,6 @@
   * After the pre-processing steps, the data will be divided into the clusters by using the already trained Kmeans clustering model.
   * And, the best model created for each cluster will be used for prediction and all the data will be compiled together as per their original index order and the filename order.
   * Finally, the prediction results will be exported as “Predictions.csv” file in “Prediction Results” folder.
-
-## Link
-
-<a href="https://concrete-strength--prediction.herokuapp.com/">Heroku App Link</a>
 
 ### Screenshots
 

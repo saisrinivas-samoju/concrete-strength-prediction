@@ -23,3 +23,8 @@
 2022-02-24/14:58:11		Good Raw directory has been deleted successfully!
 2022-02-24/14:58:11		Bad data files moved to archive
 2022-02-24/14:58:11		Bad Raw Data Folder Deleted successfully!
+2022-02-24/15:17:41		Created Good Raw Directory!
+2022-02-24/15:17:41		Created Bad Raw Directory!
+2022-02-24/15:17:43		Good Raw directory has been deleted successfully!
+2022-02-24/15:17:43		Bad data files moved to archive
+2022-02-24/15:17:43		Bad Raw Data Folder Deleted successfully!

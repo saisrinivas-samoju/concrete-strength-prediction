@@ -13,3 +13,6 @@
 2022-02-24/14:58:07		Valid File name! File moved to GoodRaw Folder : concrete_strength_13072021_141000.csv
 2022-02-24/14:58:07		Valid File name! File moved to GoodRaw Folder : concrete_strength_14072021_113045.csv
 2022-02-24/14:58:07		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_20072021_0907.csv
+2022-02-24/15:17:41		Valid File name! File moved to GoodRaw Folder : concrete_strength_13072021_141000.csv
+2022-02-24/15:17:41		Valid File name! File moved to GoodRaw Folder : concrete_strength_14072021_113045.csv
+2022-02-24/15:17:41		Invalid File Name!! File moved to Bad Raw Folder : concrete_strength_20072021_0907.csv

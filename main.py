@@ -7,6 +7,8 @@ from train_model import TrainModel
 from predict_results import PredictResults
 from prediction_validation import PredictionValidation
 from Dataframe_to_Image.df_to_image import df_to_image
+import os
+from wsgiref import simple_server
 
 
 app = Flask(__name__)
@@ -129,41 +131,10 @@ def page_not_found(error):
     return render_template('404.html'), 404
 
 
-
-
-
-
-
-
-
-
-
-
-
-# Training pipeline
-
-# Train validation
-# from train_validation import TrainValidation
-# train_validation_check = TrainValidation("Training_Batch_Files")
-# train_validation_check.train_validation()
-
-# Training the models
-# from train_model import TrainModel
-# train_check = TrainModel()
-# train_check.model_training()
-
-
-# Prediction pipeline
-
-# Prediction validation
-# from prediction_validation import PredictionValidation
-# validation_check = PredictionValidation("Prediction_Batch_Files")
-# validation_check.prediction_validation()
-
-# Predicting the results
-# from predict_results import PredictResults
-# predict_check = PredictResults("Prediction_Batch_Files")
-# predict_check.predict_many()
-
-# Predicting single input
-# predict_check.predict_one([213.7, 98.1,24.5, 181.7, 6.9, 1065.8, 785.4, 3])
+port = int(os.getenv("PORT",5000))
+if __name__ == "__main__":
+    host = '0.0.0.0'
+    # port = 5000
+    httpd = simple_server.make_server(host, port, app)
+    print("Serving on %s %d" % (host, port))
+    httpd.serve_forever()

@@ -274,3 +274,43 @@
 2022-02-24/14:58:12		Dataframe with the predictions has been created successfully.
 2022-02-24/14:58:12		Dataframe with Predictions has been saved at: 'Prediction_Results/Predictions.csv'
 2022-02-24/14:58:12		Exited predict_many method in PredictResults Class
+2022-02-24/15:17:43		Predicting the output of the given batch files has started!
+2022-02-24/15:17:43		Data loaded successfully for prediction
+2022-02-24/15:17:43		Entered is_null_present in PredictionPreprocessor Class
+2022-02-24/15:17:43		No null values are present in the prediction dataset.
+2022-02-24/15:17:43		Exited the is_null_present method from the PredictionPreprocessor class
+2022-02-24/15:17:43		Entered match_columns in PredictionProcessor Class
+2022-02-24/15:17:43		Entered remove_columns method in PredictionPreprocessor Class
+2022-02-24/15:17:43		Remove the column(s): [] successfully
+2022-02-24/15:17:43		Removed {zero_std_cols} successfully to match the features with the training features.
+2022-02-24/15:17:43		Exited the match_columns method from the PredictionPreprocessor class
+2022-02-24/15:17:43		Columns matched in prediction data with the training data
+2022-02-24/15:17:43		Entered the load_model method of FileOperation class
+2022-02-24/15:17:43		Loading the KMeans.joblib from Models/KMeans
+2022-02-24/15:17:43		Successfully loaded the {filename}.joblib
+2022-02-24/15:17:43		Exiting the load_model method of FileOperation class
+2022-02-24/15:17:43		Clustering model loaded successfully
+2022-02-24/15:17:43		Entered the find_correct_model_file method of the FileOperation class
+2022-02-24/15:17:43		Started finding the correct model file for the cluster number: 0
+2022-02-24/15:17:43		Found the correct model for the cluster number: 0
+2022-02-24/15:17:43		Entered the load_model method of FileOperation class
+2022-02-24/15:17:43		Loading the DecisionTree0.joblib from Models/DecisionTree0
+2022-02-24/15:17:43		Successfully loaded the {filename}.joblib
+2022-02-24/15:17:43		Exiting the load_model method of FileOperation class
+2022-02-24/15:17:43		Entered the find_correct_model_file method of the FileOperation class
+2022-02-24/15:17:43		Started finding the correct model file for the cluster number: 1
+2022-02-24/15:17:43		Found the correct model for the cluster number: 1
+2022-02-24/15:17:43		Entered the load_model method of FileOperation class
+2022-02-24/15:17:43		Loading the RandomForest1.joblib from Models/RandomForest1
+2022-02-24/15:17:43		Successfully loaded the {filename}.joblib
+2022-02-24/15:17:43		Exiting the load_model method of FileOperation class
+2022-02-24/15:17:43		Entered the find_correct_model_file method of the FileOperation class
+2022-02-24/15:17:43		Started finding the correct model file for the cluster number: 2
+2022-02-24/15:17:43		Found the correct model for the cluster number: 2
+2022-02-24/15:17:43		Entered the load_model method of FileOperation class
+2022-02-24/15:17:43		Loading the XGBoost2.joblib from Models/XGBoost2
+2022-02-24/15:17:43		Successfully loaded the {filename}.joblib
+2022-02-24/15:17:43		Exiting the load_model method of FileOperation class
+2022-02-24/15:17:43		Dataframe with the predictions has been created successfully.
+2022-02-24/15:17:43		Dataframe with Predictions has been saved at: 'Prediction_Results/Predictions.csv'
+2022-02-24/15:17:43		Exited predict_many method in PredictResults Class

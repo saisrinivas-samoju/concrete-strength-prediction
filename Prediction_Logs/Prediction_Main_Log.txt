@@ -83,3 +83,20 @@
 2022-02-24/14:58:11		Deleted the existing Prediction Database
 2022-02-24/14:58:11		#### Validation for prediction files has been completed successfully! ####
 2022-02-24/14:58:11		Data Loaded Successfully!
+2022-02-24/15:17:41		Validation of prediction batch files has started!
+2022-02-24/15:17:41		Raw Data Validation has been completed!
+2022-02-24/15:17:41		Data Transformation has started
+2022-02-24/15:17:41		Data Transformation is completed! File(s) are ready to be inserted in the database
+2022-02-24/15:17:41		Creating database for prediction data on the basis of given schema
+2022-02-24/15:17:41		Table Created Successfully!
+2022-02-24/15:17:41		Data insertion in the database has started!
+2022-02-24/15:17:43		Data has been inserted into the database successfully!
+2022-02-24/15:17:43		Creating a master csv file for prediction...
+2022-02-24/15:17:43		Created the csv file for prediction!
+2022-02-24/15:17:43		Deleting the existing Good data folder...
+2022-02-24/15:17:43		Deleted the existing Good Data Folder
+2022-02-24/15:17:43		Moving the Bad Data Folder to Archive...
+2022-02-24/15:17:43		Moved the existing Bad Data folder to Archive!
+2022-02-24/15:17:43		Deleted the existing Prediction Database
+2022-02-24/15:17:43		#### Validation for prediction files has been completed successfully! ####
+2022-02-24/15:17:43		Data Loaded Successfully!

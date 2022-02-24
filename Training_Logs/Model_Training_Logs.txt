@@ -816,3 +816,7 @@
 2022-02-24/14:58:11		Searching for all the columns with a zero standard deviation...
 2022-02-24/14:58:11		No columns with zero standard deviation
 2022-02-24/14:58:11		Exited the get_columns_with_zero_std method in the Preprocessing class
+2022-02-24/15:17:43		Entered get_columns_with_zero_std in Preprocessor Class
+2022-02-24/15:17:43		Searching for all the columns with a zero standard deviation...
+2022-02-24/15:17:43		No columns with zero standard deviation
+2022-02-24/15:17:43		Exited the get_columns_with_zero_std method in the Preprocessing class

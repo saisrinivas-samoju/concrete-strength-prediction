@@ -8,3 +8,5 @@
 2022-02-24/11:27:16		Column Length Validation Completed!
 2022-02-24/14:58:08		Invalid Column Length for the file! File moved to Bad Raw Folder : concrete_strength_14072021_113045.csv
 2022-02-24/14:58:08		Column Length Validation Completed!
+2022-02-24/15:17:41		Invalid Column Length for the file! File moved to Bad Raw Folder : concrete_strength_14072021_113045.csv
+2022-02-24/15:17:41		Column Length Validation Completed!
